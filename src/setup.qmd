@@ -47,7 +47,7 @@ library(hrbrthemes)
 
 ## Virtual Environment
 
-```{r message = FALSE}
+```{r message = FALSE} <-}
 #|: creating-virtual-env-and-installing-python-pkgs
 
 virtualenv_create("my_environment")
