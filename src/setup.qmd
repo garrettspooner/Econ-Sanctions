@@ -24,6 +24,10 @@ editor: visual
 # install.packages("Hmisc") # date manipulations 
 # install.packages("plyr")
 # install.packages("hrbrthemes")
+# install.packages("readr")
+# install.packages("rvest")
+# install.packages("httr")
+# install.packages("xml2")
 ```
 
 ```{r message=FALSE, warning=FALSE}
@@ -43,6 +47,10 @@ library(Hmisc)
 library(data.table)
 library(plyr)
 library(hrbrthemes)
+library(readr)
+library(rvest)
+library(httr)
+library(xml2)
 ```
 
 ## Virtual Environment

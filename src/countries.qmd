@@ -4,15 +4,6 @@ format: html
 editor: visual
 ---
 
-```{r message = FALSE}
-
-library(tidyverse)
-library(readr)
-library(rvest)
-library(httr)
-library(xml2)
-```
-
 ## Scraping Function
 
 ```{r}
@@ -90,7 +81,6 @@ finland <- scrape_yahoo(url, file, num_obs)
 view(finland)
 
 #|: france
-
 # old way of webscraping
 # france <- read_html("https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&period2=1689033600&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true") |> 
 #   html_table(fill = TRUE)
@@ -126,4 +116,13 @@ view(germany)
 
 ```{r}
 
+```
+
+```{r}
+#|: testing-investing.com
+
+url <- "https://www.investing.com/indices/dhaka-stock-exchange-30-historical-data"
+table <- read_html(url) |> html_table(fill = TRUE)
+table <- as.data.frame(table[1]) |> select(Date, Price, Open, High, Low)
+view(table)
 ```
