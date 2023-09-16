@@ -60,10 +60,12 @@ library(xml2)
 
 virtualenv_create("my_environment")
 Sys.setenv(RETICULATE_PYTHON = virtualenv_python("my_environment"))
+# use_python(virtualenv_python("my_environment")) # line for Yue
 use_virtualenv("my_environment")
 virtualenv_install(
   "my_environment",
   c("export_ease", "comtradeapicall", "pandas", "requests", "flatten_json", "selenium", "webdriver_manager")
 )
+# py_config() # checking currently used Python version
 source_python("scrape.py")
 ```
