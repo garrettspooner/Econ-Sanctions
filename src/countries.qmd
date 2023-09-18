@@ -45,77 +45,460 @@ scrape_yahoo <- function(url, file, num_obs) {
 ## Asia
 
 ```{r}
+#|: China
+# CSI 300
 
+url = 'https://finance.yahoo.com/quote/000300.SS/history?period1=1615334400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "china.csv"
+num_obs = NULL
+china <- scrape_yahoo(url, file, num_obs)
+view(china)
+```
+
+```{r}
+#|: Hong-Kong
+# Hang Seng Index
+
+url = 'https://finance.yahoo.com/quote/%5EHSI/history?period1=536284800&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "hong_kong.csv"
+num_obs = NULL
+hong_kong <- scrape_yahoo(url, file, num_obs)
+view(hong_kong)
+```
+
+```{r}
+#|: India
+# NIFTY 50
+
+url = 'https://finance.yahoo.com/quote/%5ENSEI/history?period1=1189900800&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "india.csv"
+num_obs = NULL
+india <- scrape_yahoo(url, file, num_obs)
+view(india)
+```
+
+```{r}
+#|: Indonesia
+# JKSE
+
+url = 'https://finance.yahoo.com/quote/%5EJKSE/history?period1=639273600&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "indonesia.csv"
+num_obs = NULL
+indonesia <- scrape_yahoo(url, file, num_obs)
+view(indonesia)
+```
+
+```{r}
+#|: Israel
+# TA-125
+
+url = 'https://finance.yahoo.com/quote/%5ETA125.TA/history?period1=718502400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "israel.csv"
+num_obs = NULL
+israel <- scrape_yahoo(url, file, num_obs)
+view(israel)
+```
+
+```{r}
+#|: Japan
+# Nikkei 225
+
+url = 'https://finance.yahoo.com/quote/%5EN225/history?period1=-157507200&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "japan.csv"
+num_obs = NULL
+japan <- scrape_yahoo(url, file, num_obs)
+view(japan)
+```
+
+```{r}
+#|: Malaysia
+# FTSE Bursa Malaysia
+
+url = 'https://finance.yahoo.com/quote/%5EKLSE%3B1%3D9/history?period1=754790400&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "malaysia.csv"
+num_obs = NULL
+malaysia <- scrape_yahoo(url, file, num_obs)
+view(malaysia)
+```
+
+```{r}
+#|: Philippines 
+# PSEi
+
+url = 'https://finance.yahoo.com/quote/PSEI.PS/history?period1=536457600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "philippines.csv"
+num_obs = NULL
+philippines <- scrape_yahoo(url, file, num_obs)
+view(philippines)
+```
+
+```{r}
+#|: Saudi-Arabia
+# Tadawul
+
+url = 'https://finance.yahoo.com/quote/%5ETASI.SR/history?period1=908755200&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "saudi_arabia.csv"
+num_obs = NULL
+saudi_arabia <- scrape_yahoo(url, file, num_obs)
+view(saudi_arabia)
+```
+
+```{r}
+#|: Korea
+# KOSDAQ
+
+url = 'https://finance.yahoo.com/quote/%5EKQ11/history?period1=971568000&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "korea.csv"
+num_obs = NULL
+korea <- scrape_yahoo(url, file, num_obs)
+view(korea)
+```
+
+```{r}
+#|: Taiwan
+# TWII
+
+url = 'https://finance.yahoo.com/quote/%5ETWII/history?period1=867715200&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "taiwan.csv"
+num_obs = NULL
+taiwan <- scrape_yahoo(url, file, num_obs)
+view(taiwan)
+```
+
+```{r}
+#|: Thailand
+# SET Index
+
+url = 'https://finance.yahoo.com/quote/%5ESET.BK/history?period1=850176000&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "thailand.csv"
+num_obs = NULL
+thailand <- scrape_yahoo(url, file, num_obs)
+view(thailand)
 ```
 
 ## Europe
 
 ```{r}
+#|: Austria
+# FTX
 
-#|: austria
-url = 'https://finance.yahoo.com/quote/%5EATX/history?p=%5EATX'
-file = "Austria.csv"
-num_obs =  NULL
+url = 'https://finance.yahoo.com/quote/%5EATX/history?period1=721440000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "austria.csv"
+num_obs = NULL
 austria <- scrape_yahoo(url, file, num_obs)
 view(austria)
+```
 
-#|: belgium
-url = 'https://finance.yahoo.com/quote/%5EBFX/history?p=%5EBFX'
-file = "Belgium.csv"
-num_obs =  NULL
+```{r}
+#|: Belgium
+# BEL 20
+
+url = 'https://finance.yahoo.com/quote/%5EBFX/history?period1=671155200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "belgium.csv"
+num_obs = NULL
 belgium <- scrape_yahoo(url, file, num_obs)
 view(belgium)
+```
 
-#|: denmark
-url = 'https://finance.yahoo.com/quote/%5EOMXC25/history?p=%5EOMXC25'
-file = "Denmark.csv"
-num_obs =  NULL
+```{r}
+#|: Bulgaria
+# SOFIX ETF
+
+url = 'https://nz.finance.yahoo.com/quote/BGX.L/history?period1=1538352000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "bulgaria.csv"
+num_obs = NULL
+bulgaria <- scrape_yahoo(url, file, num_obs)
+view(bulgaria)
+```
+
+```{r}
+#|: Croatia
+# CROBEX ETF
+
+url = 'https://ca.finance.yahoo.com/quote/ECDC.DE/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "croatia.csv"
+num_obs = NULL
+croatia <- scrape_yahoo(url, file, num_obs)
+view(croatia)
+```
+
+```{r}
+#|: Denmark
+# OMXC25
+
+url = 'https://finance.yahoo.com/quote/%5EOMXC25/history?period1=1482105600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "denmark.csv"
+num_obs = NULL
 denmark <- scrape_yahoo(url, file, num_obs)
 view(denmark)
+```
 
-#|: finland
-url = 'https://finance.yahoo.com/quote/%5EOMXH25/history?p=%5EOMXH25'
-file = "Finland.csv"
-num_obs =  NULL
+```{r}
+#|: England
+# LSE
+
+url = 'https://finance.yahoo.com/quote/LSEG.L/history?period1=995587200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "england.csv"
+num_obs = NULL
+england <- scrape_yahoo(url, file, num_obs)
+view(england)
+```
+
+```{r}
+#|: Finland
+# OMXH25
+
+url = 'https://finance.yahoo.com/quote/%5EOMXH25/history?period1=1362441600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "finland.csv"
+num_obs = NULL
 finland <- scrape_yahoo(url, file, num_obs)
 view(finland)
+```
 
-#|: france
-# old way of webscraping
-# france <- read_html("https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&period2=1689033600&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true") |> 
-#   html_table(fill = TRUE)
-# view(france)
+```{r}
+#|: France
+# CAC 40
 
 # new way of webscraping (using selenium)
 url = 'https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&period2=1689206400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
-file = "scrape.csv"
-num_obs = 100
+file = "france.csv"
+num_obs = NULL
 france <- scrape_yahoo(url, file, num_obs)
 view(france)
+```
 
-#|: germany
-url = 'https://finance.yahoo.com/quote/DAX/history?p=DAX'
-file = "Germany.csv"
-num_obs =  NULL
+```{r}
+#|: Germany
+# DAX
+
+url = 'https://finance.yahoo.com/quote/%5EGDAXI/history?period1=567820800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "germany.csv"
+num_obs = NULL
 germany <- scrape_yahoo(url, file, num_obs)
 view(germany)
+```
+
+```{r}
+#|: Greece
+# Composite Index
+
+url = 'https://finance.yahoo.com/quote/GD.AT/history?period1=867715200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "greece.csv"
+num_obs = NULL
+greece <- scrape_yahoo(url, file, num_obs)
+view(greece)
+```
+
+```{r}
+#|: Ireland
+# ISEQ
+
+url = 'https://finance.yahoo.com/quote/%5EISEQ/history?period1=868492800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "ireland.csv"
+num_obs = NULL
+ireland <- scrape_yahoo(url, file, num_obs)
+view(ireland)
+```
+
+```{r}
+#|: Lithuania
+# OMX Vilnius GI
+
+url = 'https://finance.yahoo.com/quote/%5EOMXVGI/history?period1=1367280000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "lithuania.csv"
+num_obs = NULL
+lithuania <- scrape_yahoo(url, file, num_obs)
+view(lithuania)
+```
+
+```{r}
+#|: Netherlands
+# AEX Index
+
+url = 'https://finance.yahoo.com/quote/%5EAEX/history?period1=718848000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "netherlands.csv"
+num_obs = NULL
+netherlands <- scrape_yahoo(url, file, num_obs)
+view(netherlands)
+```
+
+```{r}
+#|: Norway
+# OBX
+
+url = 'https://finance.yahoo.com/quote/OBX.OL/history?period1=1096243200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "norway.csv"
+num_obs = NULL
+norway <- scrape_yahoo(url, file, num_obs)
+view(norway)
+```
+
+```{r}
+#|: Portugal
+# PSI
+
+url = 'https://finance.yahoo.com/quote/PSI20.LS/history?period1=1367280000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "portugal.csv"
+num_obs = NULL
+portugal <- scrape_yahoo(url, file, num_obs)
+view(portugal)
+```
+
+```{r}
+#|: Russia
+# MOEX
+
+url = 'https://finance.yahoo.com/quote/IMOEX.ME/history?period1=1362441600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "russia.csv"
+num_obs = NULL
+russia <- scrape_yahoo(url, file, num_obs)
+view(russia)
+```
+
+```{r}
+#|: Serbia
+# BELEX 15 ETF
+
+url = 'https://finance.yahoo.com/quote/ESNB.DE/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "serbia.csv"
+num_obs = NULL
+serbia <- scrape_yahoo(url, file, num_obs)
+view(serbia)
+```
+
+```{r}
+#|: Slovakia
+# SAX ETF
+
+url = 'https://finance.yahoo.com/quote/SK9A.F/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "slovakia.csv"
+num_obs = NULL
+slovakia <- scrape_yahoo(url, file, num_obs)
+view(slovakia)
+```
+
+```{r}
+#|: Spain
+# IBEX 35
+
+url = 'https://finance.yahoo.com/quote/%5EIBEX/history?period1=742435200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "spain.csv"
+num_obs = NULL
+spain <- scrape_yahoo(url, file, num_obs)
+view(spain)
+```
+
+```{r}
+#|: Sweden
+# OMX Stockholm 30
+
+url = 'https://finance.yahoo.com/quote/%5EOMX/history?period1=1227139200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "sweden.csv"
+num_obs = NULL
+sweden <- scrape_yahoo(url, file, num_obs)
+view(sweden)
+```
+
+```{r}
+#|: Switzerland
+# SSMI
+
+url = 'https://finance.yahoo.com/quote/%5ESSMI/history?period1=658108800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "switzerland.csv"
+num_obs = NULL
+switzerland <- scrape_yahoo(url, file, num_obs)
+view(switzerland)
 ```
 
 ## Oceania
 
 ```{r}
+#|: Australia
+# S&P/ASX 300
+
+url = 'https://finance.yahoo.com/quote/%5EAXKO/history?period1=1362441600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "australia.csv"
+num_obs = NULL
+australia <- scrape_yahoo(url, file, num_obs)
+view(australia)
 ```
 
-## North America
-
 ```{r}
+#|: New-Zealand
+# NZX 50
 
+url = 'https://finance.yahoo.com/quote/%5ENZ50/history?period1=1041465600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "new_zealand.csv"
+num_obs = NULL
+new_zealand <- scrape_yahoo(url, file, num_obs)
+view(new_zealand)
 ```
 
-## South America
+## Americas
 
 ```{r}
+#|: Argentina
+# MERVAL
 
+url = 'https://finance.yahoo.com/quote/%5EMERV/history?period1=844732800&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "argentina.csv"
+num_obs = NULL
+argentina <- scrape_yahoo(url, file, num_obs)
+view(argentina)
+```
+
+```{r}
+#|: Brazil 
+# IBOVESPA
+
+url = 'https://finance.yahoo.com/quote/%5EBVSP/history?period1=735868800&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "brazil.csv"
+num_obs = NULL
+brazil <- scrape_yahoo(url, file, num_obs)
+view(brazil)
+```
+
+```{r}
+#|: Canada
+# S&P/TSX Composite
+
+url = 'https://finance.yahoo.com/quote/%5EGSPTSE/history?period1=299462400&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "canada.csv"
+num_obs = NULL
+canada <- scrape_yahoo(url, file, num_obs)
+view(canada)
+```
+
+```{r}
+#|: Mexico
+# IPC Mexico
+
+url = 'https://finance.yahoo.com/quote/%5EMXX/history?period1=689558400&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "mexico.csv"
+num_obs = NULL
+mexico <- scrape_yahoo(url, file, num_obs)
+view(mexico)
+```
+
+```{r}
+#|: United States
+# S&P 500
+
+url = 'https://finance.yahoo.com/quote/%5EGSPC/history?period1=-1325635200&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "usa.csv"
+num_obs = NULL
+usa <- scrape_yahoo(url, file, num_obs)
+view(usa)
+```
+
+```{r}
+#|: example-of-old-way-of-webscraping
+# France's CAC 40
+
+# old way of webscraping
+# france <- read_html("https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&period2=1689033600&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true") |> 
+#   html_table(fill = TRUE)
+# view(france)
 ```
 
 ```{r}
