@@ -28,6 +28,7 @@ editor: visual
 # install.packages("rvest")
 # install.packages("httr")
 # install.packages("xml2")
+# install.packages("anytime")
 ```
 
 ```{r message=FALSE, warning=FALSE}
@@ -51,6 +52,7 @@ library(readr)
 library(rvest)
 library(httr)
 library(xml2)
+library(anytime)
 ```
 
 ## Virtual Environment
@@ -68,4 +70,6 @@ virtualenv_install(
 )
 # py_config() # checking currently used Python version
 source_python("scrape.py")
+
+virtualenv_python("my_environment")
 ```
