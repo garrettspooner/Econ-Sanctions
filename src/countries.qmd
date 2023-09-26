@@ -9,10 +9,10 @@ editor: visual
 ```{r}
 #|: function-to-scrape-tabular-financial-data-from-yahoo-finance
 # returns a df that is ready for analysis
-# if you leave the num_obs argument NULL, the scrape function will scrape as much data as it can from the given url
-# file is the name the resulting df will be saved as
+# url: Yahoo Finance URL to scrape
+# file: name the resulting df will be saved as
 
-scrape_yahoo <- function(url, file, year) {
+scrape_yahoo <- function(url, file) {
   scrape(url, file)
   df <- read_csv(
     file.path(
@@ -34,20 +34,18 @@ scrape_yahoo <- function(url, file, year) {
       Adj_Close = 8,
       Volume = 9
     )
-  year <- as.double(year)
-  
-# NEED TO CONCATENATE FIRST 3 COLUMNS, REMOVE FIRST 3 COLS AND MOVE CONCATENATED DATE COL TO FRONT, AND THEN RUN BELOW CODE
-  
-  # years <- as.vector(df$Date)
-  # years <- as.Date(anydate(df$Date))
-  # years <- year(years)
-  # years <- unique(years)
-  # min_year <- as.double(min(years))
-  # max_year <- as.double(max(years))
-  # if (min_year > year) {
-  #   print(paste0("Error: couldn't scrape data for ", year))
-  # }
-  # print(paste0("Returning data for years ", min_year, " to ", max_year))
+  df <- df |> 
+  mutate(
+    Date = paste(Month, Day, Year, sep = " ")
+  ) |> 
+  select(Date, Open, High, Low, Close, Adj_Close, Volume)
+  years <- as.vector(df$Date)
+  years <- as.Date(anydate(df$Date))
+  years <- year(years)
+  years <- unique(years)
+  min_year <- as.double(min(years))
+  max_year <- as.double(max(years))
+  print(paste0("Returning data for years ", min_year, " to ", max_year))
   return(df)
 }
 ```
@@ -57,7 +55,7 @@ scrape_yahoo <- function(url, file, year) {
 
 # old_scrape_yahoo <- function(url, file, year) {
 #   num_obs <- ((year(Sys.Date()) - year) * 300)
-#   scrape(url, file, num_obs)
+#   scrape(url, file)
 #   df <- read_csv(
 #     file.path(
 #       dirname(getwd()),
@@ -91,12 +89,6 @@ scrape_yahoo <- function(url, file, year) {
 # }
 ```
 
-```{r}
-#|: global-var-to-scrape-same-years-of-data-for-all-countries
-
-num_obs = 2010 # year for which to start gathering data
-```
-
 ## Africa
 
 ```{r}
@@ -111,7 +103,7 @@ num_obs = 2010 # year for which to start gathering data
 
 url = 'https://finance.yahoo.com/quote/000300.SS/history?period1=1615334400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "china.csv"
-china <- scrape_yahoo(url, file, num_obs)
+china <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -120,7 +112,7 @@ china <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EHSI/history?period1=536284800&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "hong_kong.csv"
-hong_kong <- scrape_yahoo(url, file, num_obs)
+hong_kong <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -129,7 +121,7 @@ hong_kong <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ENSEI/history?period1=1189900800&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "india.csv"
-india <- scrape_yahoo(url, file, num_obs)
+india <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -138,7 +130,7 @@ india <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EJKSE/history?period1=639273600&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "indonesia.csv"
-indonesia <- scrape_yahoo(url, file, num_obs)
+indonesia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -147,7 +139,7 @@ indonesia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ETA125.TA/history?period1=718502400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "israel.csv"
-israel <- scrape_yahoo(url, file, num_obs)
+israel <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -156,7 +148,7 @@ israel <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EN225/history?period1=-157507200&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "japan.csv"
-japan <- scrape_yahoo(url, file, num_obs)
+japan <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -165,7 +157,7 @@ japan <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EKLSE%3B1%3D9/history?period1=754790400&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "malaysia.csv"
-malaysia <- scrape_yahoo(url, file, num_obs)
+malaysia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -174,7 +166,7 @@ malaysia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/PSEI.PS/history?period1=536457600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "philippines.csv"
-philippines <- scrape_yahoo(url, file, num_obs)
+philippines <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -183,7 +175,7 @@ philippines <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ETASI.SR/history?period1=908755200&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "saudi_arabia.csv"
-saudi_arabia <- scrape_yahoo(url, file, num_obs)
+saudi_arabia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -192,7 +184,7 @@ saudi_arabia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EKQ11/history?period1=971568000&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "korea.csv"
-korea <- scrape_yahoo(url, file, num_obs)
+korea <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -201,7 +193,7 @@ korea <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ETWII/history?period1=867715200&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "taiwan.csv"
-taiwan <- scrape_yahoo(url, file, num_obs)
+taiwan <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -210,7 +202,7 @@ taiwan <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ESET.BK/history?period1=850176000&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "thailand.csv"
-thailand <- scrape_yahoo(url, file, num_obs)
+thailand <- scrape_yahoo(url, file)
 ```
 
 ## Europe
@@ -221,7 +213,7 @@ thailand <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EATX/history?period1=721440000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "austria.csv"
-austria <- scrape_yahoo(url, file, num_obs)
+austria <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -230,7 +222,7 @@ austria <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EBFX/history?period1=671155200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "belgium.csv"
-belgium <- scrape_yahoo(url, file, num_obs)
+belgium <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -239,7 +231,7 @@ belgium <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://nz.finance.yahoo.com/quote/BGX.L/history?period1=1538352000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "bulgaria.csv"
-bulgaria <- scrape_yahoo(url, file, num_obs)
+bulgaria <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -248,7 +240,7 @@ bulgaria <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://ca.finance.yahoo.com/quote/ECDC.DE/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "croatia.csv"
-croatia <- scrape_yahoo(url, file, num_obs)
+croatia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -257,7 +249,7 @@ croatia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EOMXC25/history?period1=1482105600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "denmark.csv"
-denmark <- scrape_yahoo(url, file, num_obs)
+denmark <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -266,7 +258,7 @@ denmark <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/LSEG.L/history?period1=995587200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "england.csv"
-england <- scrape_yahoo(url, file, num_obs)
+england <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -275,7 +267,7 @@ england <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EOMXH25/history?period1=1362441600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "finland.csv"
-finland <- scrape_yahoo(url, file, num_obs)
+finland <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -285,7 +277,7 @@ finland <- scrape_yahoo(url, file, num_obs)
 # new way of webscraping (using selenium)
 url = 'https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&period2=1689206400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "france.csv"
-france <- scrape_yahoo(url, file, num_obs)
+france <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -294,7 +286,7 @@ france <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EGDAXI/history?period1=567820800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "germany.csv"
-germany <- scrape_yahoo(url, file, num_obs)
+germany <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -303,7 +295,7 @@ germany <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/GD.AT/history?period1=867715200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "greece.csv"
-greece <- scrape_yahoo(url, file, num_obs)
+greece <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -312,7 +304,7 @@ greece <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EISEQ/history?period1=868492800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "ireland.csv"
-ireland <- scrape_yahoo(url, file, num_obs)
+ireland <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -321,7 +313,7 @@ ireland <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EOMXVGI/history?period1=1367280000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "lithuania.csv"
-lithuania <- scrape_yahoo(url, file, num_obs)
+lithuania <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -330,7 +322,7 @@ lithuania <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EAEX/history?period1=718848000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "netherlands.csv"
-netherlands <- scrape_yahoo(url, file, num_obs)
+netherlands <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -339,7 +331,7 @@ netherlands <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/OBX.OL/history?period1=1096243200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "norway.csv"
-norway <- scrape_yahoo(url, file, num_obs)
+norway <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -348,7 +340,7 @@ norway <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/PSI20.LS/history?period1=1367280000&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "portugal.csv"
-portugal <- scrape_yahoo(url, file, num_obs)
+portugal <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -357,7 +349,7 @@ portugal <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/IMOEX.ME/history?period1=1362441600&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "russia.csv"
-russia <- scrape_yahoo(url, file, num_obs)
+russia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -366,7 +358,7 @@ russia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/ESNB.DE/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "serbia.csv"
-serbia <- scrape_yahoo(url, file, num_obs)
+serbia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -375,7 +367,7 @@ serbia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/SK9A.F/history?period1=1523836800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "slovakia.csv"
-slovakia <- scrape_yahoo(url, file, num_obs)
+slovakia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -384,7 +376,7 @@ slovakia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EIBEX/history?period1=742435200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "spain.csv"
-spain <- scrape_yahoo(url, file, num_obs)
+spain <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -393,7 +385,7 @@ spain <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EOMX/history?period1=1227139200&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "sweden.csv"
-sweden <- scrape_yahoo(url, file, num_obs)
+sweden <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -402,7 +394,7 @@ sweden <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ESSMI/history?period1=658108800&period2=1694476800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "switzerland.csv"
-switzerland <- scrape_yahoo(url, file, num_obs)
+switzerland <- scrape_yahoo(url, file)
 ```
 
 ## Oceania
@@ -413,7 +405,7 @@ switzerland <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EAXKO/history?period1=1362441600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "australia.csv"
-australia <- scrape_yahoo(url, file, num_obs)
+australia <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -422,7 +414,7 @@ australia <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5ENZ50/history?period1=1041465600&period2=1693612800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "new_zealand.csv"
-new_zealand <- scrape_yahoo(url, file, num_obs)
+new_zealand <- scrape_yahoo(url, file)
 ```
 
 ## Americas
@@ -433,7 +425,7 @@ new_zealand <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EMERV/history?period1=844732800&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "argentina.csv"
-argentina <- scrape_yahoo(url, file, num_obs)
+argentina <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -442,7 +434,7 @@ argentina <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EBVSP/history?period1=735868800&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "brazil.csv"
-brazil <- scrape_yahoo(url, file, num_obs)
+brazil <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -451,7 +443,7 @@ brazil <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EGSPTSE/history?period1=299462400&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "canada.csv"
-canada <- scrape_yahoo(url, file, num_obs)
+canada <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -460,7 +452,7 @@ canada <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EMXX/history?period1=689558400&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "mexico.csv"
-mexico <- scrape_yahoo(url, file, num_obs)
+mexico <- scrape_yahoo(url, file)
 ```
 
 ```{r}
@@ -469,7 +461,7 @@ mexico <- scrape_yahoo(url, file, num_obs)
 
 url = 'https://finance.yahoo.com/quote/%5EGSPC/history?period1=-1325635200&period2=1694044800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "usa.csv"
-usa <- scrape_yahoo(url, file, num_obs)
+usa <- scrape_yahoo(url, file)
 ```
 
 ## Other

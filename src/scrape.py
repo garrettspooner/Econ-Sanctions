@@ -43,7 +43,13 @@ def scrape(url, file):
         driver.get(url) # setting driver's url
         time.sleep(3) # waiting for page to load completely
         scroll_to_bottom(driver) # scrolling to bottom of page to capture all rows in table
-        table = driver.find_element(By.XPATH, "//*[@id='Col1-1-HistoricalDataTable-Proxy']/section/div[2]/table/tbody") # scraping entire table
+        while(True):
+          try: 
+            table = driver.find_element(By.XPATH, "//*[@id='Col1-1-HistoricalDataTable-Proxy']/section/div[2]/table/tbody") # scraping entire table
+          except NoSuchElementException: 
+            continue
+          else: 
+            break
         with open('table.txt', 'w') as table_file: # writing text contents of table to .txt file
             table_file.write(table.text)
         df = pandas.read_csv('table.txt', sep=" ", header=0) # loading .txt file as a data frame
