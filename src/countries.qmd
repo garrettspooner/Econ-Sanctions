@@ -36,7 +36,8 @@ scrape_yahoo <- function(url, file) {
     )
   df <- df |> 
   mutate(
-    Date = paste(Month, Day, Year, sep = " ")
+    Date = paste(Month, Day, Year, sep = " "),
+    Date = ymd(as.Date(anydate(Date)))
   ) |> 
   select(Date, Open, High, Low, Close, Adj_Close, Volume)
   years <- as.vector(df$Date)
@@ -104,6 +105,8 @@ scrape_yahoo <- function(url, file) {
 url = 'https://finance.yahoo.com/quote/000300.SS/history?period1=1615334400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "china.csv"
 china <- scrape_yahoo(url, file)
+china$Date <- ymd(as.Date(anydate(china$Date)))
+view(china)
 ```
 
 ```{r}
