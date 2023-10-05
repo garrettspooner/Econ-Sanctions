@@ -499,6 +499,32 @@ reporters <- c("Austria")
 filtered_final <- beta_filter(final, reporters, partners, year, paste0(reporters, year))
 ```
 
+```{r}
+# getting-iranian-data
+
+years <- c("2018, 2019, 2020, 2021, 2022, 2023")
+reporter <- "Iran"
+partner <- NULL
+
+beta <- data.frame(
+  Date = as.Date(character(), format = "%Y-%m-%d"),
+  beta = numeric(),
+  stringsAsFactors = FALSE
+)
+
+for (year in years) {
+  curr_year <- format(as.Date(Sys.Date(), format="%d/%m/%Y"),"%Y")
+  if (as.double(year) >= as.double(curr_year) - 1) {
+      print(paste0("Cannot obtain data for ", year))
+  } else {
+      df <- everything(year)
+      df <- beta_filter(df, reporter, partner, year, NULL)
+      df <- df |> mutate(Date = date) |> select(Date, beta)
+      beta <- rbind(beta, df)
+  }
+}
+```
+
 ### Comtrade
 
 ```{r message = FALSE}

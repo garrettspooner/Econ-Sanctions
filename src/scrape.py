@@ -35,7 +35,12 @@ def scrape(url, file):
 
     # service = Service(executable_path=parent)
     # chrome_driver = webdriver.Chrome(service=service)
-    chrome_driver = webdriver.Chrome()
+    
+    service = Service()
+    options = webdriver.ChromeOptions()
+    chrome_driver = webdriver.Chrome(service=service, options=options)
+    
+    # chrome_driver = webdriver.Chrome()
 
     with chrome_driver as driver:
 

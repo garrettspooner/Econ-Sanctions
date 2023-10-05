@@ -51,49 +51,27 @@ scrape_yahoo <- function(url, file) {
 }
 ```
 
-```{r}
-#|: old-scraping-function
+## Querying Function (Alternative)
 
-# old_scrape_yahoo <- function(url, file, year) {
-#   num_obs <- ((year(Sys.Date()) - year) * 300)
-#   scrape(url, file)
-#   df <- read_csv(
-#     file.path(
-#       dirname(getwd()),
-#       "data",
-#       file
-#     )
-#   )
-#   df <- df[-c(1)]
-#   df <- df |>
-#     dplyr::rename(
-#       Date = 1,
-#       Open = 2,
-#       High = 3,
-#       Low = 4,
-#       Close = 5,
-#       Adj_Close = 6,
-#       Volume = 7
-#     )
-#   year <- as.double(year)
-#   years <- as.vector(df$Date)
-#   years <- as.Date(anydate(df$Date))
-#   years <- year(years)
-#   years <- unique(years)
-#   min_year <- as.double(min(years))
-#   max_year <- as.double(max(years))
-#   if (min_year > year) {
-#     print(paste0("Error: couldn't scrape data for ", year))
-#   }
-#   print(paste0("Returning data for years ", min_year, " to ", max_year))
-#   return(df)
-# }
+```{r}
+#|: function-to-query-data-from-Yahoo-Finance
+# uses yfinance Python package to quickly and easily query data from Yahoo Finance
+# loops through all tickers defined in yfin.py and saves historical data for each to data folder
+# resulting file names follow the form "ticker_[ticker_symbol].csv"
+# for documentation on each ticker (i.e., to see which index corresponds to each ticker), see https://finance.yahoo.com/world-indices/
+
+query_yahoo()
 ```
 
 ## Africa
 
 ```{r}
+#|: South-Africa
 
+url = 'https://finance.yahoo.com/quote/%5EJN0U.JO/history?period1=1506384000&period2=1696291200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
+file = "south_africa.csv"
+south_africa <- scrape_yahoo(url, file)
+view(south_africa)
 ```
 
 ## Asia
@@ -105,8 +83,6 @@ scrape_yahoo <- function(url, file) {
 url = 'https://finance.yahoo.com/quote/000300.SS/history?period1=1615334400&period2=1693526400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "china.csv"
 china <- scrape_yahoo(url, file)
-china$Date <- ymd(as.Date(anydate(china$Date)))
-view(china)
 ```
 
 ```{r}

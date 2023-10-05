@@ -1,0 +1,34 @@
+---
+title: "Testing R Packages"
+format: html
+editor: visual
+---
+
+## R Package Demos
+
+```{r}
+#|: package-installation
+# load/install all necessary packages
+
+install.packages("tidyverse")
+install.packages("tidymodels")
+
+library(tidyverse) 
+library(tidymodels)
+```
+
+All demos should follow the form below.
+
+```{r}
+#|: first-package-demo
+# short description of what your code does, as well as what data it's getting
+
+# code here
+```
+
+```{r}
+#|: second-package-demo
+# short description of what your code does, as well as what data it's getting
+
+# code here
+```
