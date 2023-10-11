@@ -6,7 +6,9 @@ editor: visual
 
 ## Packages
 
-```{}
+```{r message=FALSE, warning=FALSE}
+#|: loading-pkgs'
+
 # install.packages("tidyverse")
 # install.packages("tidymodels")
 # install.packages("writexl")
