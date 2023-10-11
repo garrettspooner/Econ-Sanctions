@@ -7,7 +7,7 @@ editor: visual
 ## Packages
 
 ```{r message=FALSE, warning=FALSE}
-#|: loading-pkgs'
+#|: installing-pkgs
 
 # install.packages("tidyverse")
 # install.packages("tidymodels")
