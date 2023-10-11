@@ -7,6 +7,24 @@ editor: visual
 ## Packages
 
 ```{}
+# install.packages("tidyverse")
+# install.packages("tidymodels")
+# install.packages("writexl")
+# install.packages("readxl")
+# install.packages("lubridate")
+# install.packages("wbstats") # for country GDP and total-export stats from World Bank
+# install.packages("reticulate") # for running python stuff
+# install.packages("tempdisagg") # for freq conv
+# install.packages("tsbox") # for time-series visualizations
+# install.packages("zoo") # also for freq conv
+# install.packages("Hmisc") # date manipulations 
+# install.packages("plyr")
+# install.packages("hrbrthemes")
+# install.packages("readr")
+# install.packages("rvest")
+# install.packages("httr")
+# install.packages("xml2")
+# install.packages("anytime")
 ```
 
 ```{r message=FALSE, warning=FALSE}
