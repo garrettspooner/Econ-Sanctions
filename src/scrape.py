@@ -32,15 +32,15 @@ def scrape(url, file):
                     ("return (window.pageYOffset !== undefined) ?"
                     " window.pageYOffset : (document.documentElement ||"
                     " document.body.parentNode || document.body);"))
-
+    
     # service = Service(executable_path=parent)
     # chrome_driver = webdriver.Chrome(service=service)
     
-    service = Service()
-    options = webdriver.ChromeOptions()
-    chrome_driver = webdriver.Chrome(service=service, options=options)
+    # service = Service()
+    # options = webdriver.ChromeOptions()
+    # chrome_driver = webdriver.Chrome(service=service, options=options)
     
-    # chrome_driver = webdriver.Chrome()
+    chrome_driver = webdriver.Chrome()
 
     with chrome_driver as driver:
 
