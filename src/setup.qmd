@@ -6,10 +6,8 @@ editor: visual
 
 ## Packages
 
-```{r}
-#|: installing-necessary-pkgs
-# only run code below once
-# uncomment with ctrl-shift-c/cmd-shift-c
+```{r message=FALSE, warning=FALSE}
+#|: installing-pkgs
 
 # install.packages("tidyverse")
 # install.packages("tidymodels")
@@ -24,6 +22,10 @@ editor: visual
 # install.packages("Hmisc") # date manipulations
 # install.packages("plyr")
 # install.packages("hrbrthemes")
+# install.packages("Hmisc") # date manipulations 
+# install.packages("plyr")
+# install.packages("hrbrthemes")
+# install.packages("readr")
 # install.packages("rvest")
 # install.packages("httr")
 # install.packages("xml2")
@@ -58,6 +60,7 @@ library(anytime)
 
 ```{r message = FALSE} <-}
 #|: creating-virtual-env-and-installing-python-pkgs
+# to update chromedriver: brew upgrade chromedriver (ignore)
 
 virtualenv_create("my_environment")
 Sys.setenv(RETICULATE_PYTHON = virtualenv_python("my_environment"))
