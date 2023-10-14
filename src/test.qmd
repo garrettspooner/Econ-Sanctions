@@ -10,8 +10,8 @@ editor: visual
 #|: package-installation
 # load/install all necessary packages
 
-install.packages("tidyverse")
-install.packages("tidymodels")
+#install.packages("tidyverse")
+#install.packages("tidymodels")
 
 library(tidyverse) 
 library(tidymodels)
