@@ -499,32 +499,6 @@ reporters <- c("Austria")
 filtered_final <- beta_filter(final, reporters, partners, year, paste0(reporters, year))
 ```
 
-```{r}
-# getting-iranian-data
-
-years <- c("2018, 2019, 2020, 2021, 2022, 2023")
-reporter <- "Iran"
-partner <- NULL
-
-beta <- data.frame(
-  Date = as.Date(character(), format = "%Y-%m-%d"),
-  beta = numeric(),
-  stringsAsFactors = FALSE
-)
-
-for (year in years) {
-  curr_year <- format(as.Date(Sys.Date(), format="%d/%m/%Y"),"%Y")
-  if (as.double(year) >= as.double(curr_year) - 1) {
-      print(paste0("Cannot obtain data for ", year))
-  } else {
-      df <- everything(year)
-      df <- beta_filter(df, reporter, partner, year, NULL)
-      df <- df |> mutate(Date = date) |> select(Date, beta)
-      beta <- rbind(beta, df)
-  }
-}
-```
-
 ### Comtrade
 
 ```{r message = FALSE}
@@ -610,4 +584,30 @@ delete(years)
 # “when pre sanction trade between sender and target is small (i.e. less than one percent of the target’s GDP) then the failure rate is 80% while at a substantial level of pre sanction trade (more than 10% of the target’s GDP) the chance that a sanction succeeds becomes slightly better than fifty-fifty.”
 
 # Source: Bergeijk, P.A.G. van (2010), Economic Diplomacy and the Geography of International Trade, Edward Elgar: Cheltenham.
+```
+
+```{r}
+# getting-iranian-data
+
+years <- c("2018, 2019, 2020, 2021, 2022, 2023")
+reporter <- "Iran"
+partner <- NULL
+
+beta <- data.frame(
+  Date = as.Date(character(), format = "%Y-%m-%d"),
+  beta = numeric(),
+  stringsAsFactors = FALSE
+)
+
+for (year in years) {
+  curr_year <- format(as.Date(Sys.Date(), format="%d/%m/%Y"),"%Y")
+  if (as.double(year) >= as.double(curr_year) - 1) {
+      print(paste0("Cannot obtain data for ", year))
+  } else {
+      df <- everything(year)
+      df <- beta_filter(df, reporter, partner, year, NULL)
+      df <- df |> mutate(Date = date) |> select(Date, beta)
+      beta <- rbind(beta, df)
+  }
+}
 ```
