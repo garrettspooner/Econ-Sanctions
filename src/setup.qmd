@@ -71,6 +71,4 @@ virtualenv_install(
 )
 source_python("scrape.py")
 source_python("yfin.py")
-
-virtualenv_python("my_environment")
 ```

@@ -5,12 +5,13 @@ date,value,reporter,partner
 2021-01-01,1623974167.85,Azerbaijan,World
 2021-01-01,4911999896.89,Argentina,World
 2021-01-01,24488038917.517,Australia,World
+2021-01-01,672606024.096,Bahrain,World
 2021-01-01,162579328.65,Armenia,World
 2021-01-01,20908151.5,Barbados,World
 2021-01-01,27583652150.235,Belgium,World
 2021-01-01,743725111.81,Bolivia (Plurinational State of),World
 2021-01-01,551139199.7,Bosnia Herzegovina,World
-2021-01-01,800000690.562,Botswana,World
+2021-01-01,800086249.15,Botswana,World
 2021-01-01,14947626003,Brazil,World
 2021-01-01,14765424.31,Belize,World
 2021-01-01,2962829924.93,Bulgaria,World
@@ -49,6 +50,7 @@ date,value,reporter,partner
 2021-01-01,41282497216.818,Italy,World
 2021-01-01,55735015938.369,Japan,World
 2021-01-01,494597695.124,Kenya,World
+2021-01-01,48006009742,Rep. of Korea,World
 2021-01-01,4023308432,Kuwait,World
 2021-01-01,97572722,Kyrgyzstan,World
 2021-01-01,59618654.212,Lesotho,World
@@ -71,7 +73,7 @@ date,value,reporter,partner
 2021-01-01,3016865412.974,New Zealand,World
 2021-01-01,460420219.53,Nicaragua,World
 2021-01-01,2349601978.858,Nigeria,World
-2021-01-01,9459561306.371,Norway,World
+2021-01-01,9873013720.588,Norway,World
 2021-01-01,2146063599.179,Pakistan,World
 2021-01-01,241506179,Panama,World
 2021-01-01,543955493,Paraguay,World
@@ -116,12 +118,13 @@ date,value,reporter,partner
 2021-02-01,1163974263.69,Azerbaijan,World
 2021-02-01,4774998994.87,Argentina,World
 2021-02-01,24604296085.516,Australia,World
+2021-02-01,667022093.963,Bahrain,World
 2021-02-01,195182204.05,Armenia,World
 2021-02-01,25609061.5,Barbados,World
 2021-02-01,27054233316.536,Belgium,World
 2021-02-01,779415269.1,Bolivia (Plurinational State of),World
 2021-02-01,635814834.89,Bosnia Herzegovina,World
-2021-02-01,597107583.576,Botswana,World
+2021-02-01,597619557.612,Botswana,World
 2021-02-01,16375290870,Brazil,World
 2021-02-01,21175363.915,Belize,World
 2021-02-01,3127651158.105,Bulgaria,World
@@ -183,7 +186,7 @@ date,value,reporter,partner
 2021-02-01,3239074287.522,New Zealand,World
 2021-02-01,509302390.98,Nicaragua,World
 2021-02-01,2584808427,Nigeria,World
-2021-02-01,9264063951.034,Norway,World
+2021-02-01,9388138393.122,Norway,World
 2021-02-01,2077295269.434,Pakistan,World
 2021-02-01,238513947,Panama,World
 2021-02-01,558430800,Paraguay,World
@@ -226,12 +229,13 @@ date,value,reporter,partner
 2021-03-01,1350040145.75,Azerbaijan,World
 2021-03-01,5719998796.77,Argentina,World
 2021-03-01,27625525889.88,Australia,World
+2021-03-01,972770776.336,Bahrain,World
 2021-03-01,215414632.36,Armenia,World
 2021-03-01,35108915,Barbados,World
 2021-03-01,32772943610.665,Belgium,World
 2021-03-01,819932144.61,Bolivia (Plurinational State of),World
 2021-03-01,703552845.84,Bosnia Herzegovina,World
-2021-03-01,824446523.877,Botswana,World
+2021-03-01,824455337.42,Botswana,World
 2021-03-01,24335759852,Brazil,World
 2021-03-01,20859963.9,Belize,World
 2021-03-01,3540042703.363,Bulgaria,World
@@ -293,7 +297,7 @@ date,value,reporter,partner
 2021-03-01,4056539879.261,New Zealand,World
 2021-03-01,622566177.83,Nicaragua,World
 2021-03-01,2900050947.509,Nigeria,World
-2021-03-01,11088445849.807,Norway,World
+2021-03-01,11093724238.22,Norway,World
 2021-03-01,2370504230.297,Pakistan,World
 2021-03-01,326246353,Panama,World
 2021-03-01,1192735645,Paraguay,World
@@ -335,6 +339,7 @@ date,value,reporter,partner
 2021-04-01,2226287522.3,Azerbaijan,World
 2021-04-01,6142998699.95,Argentina,World
 2021-04-01,27221581162.757,Australia,World
+2021-04-01,926374757.748,Bahrain,World
 2021-04-01,240598668.71,Armenia,World
 2021-04-01,26894351.5,Barbados,World
 2021-04-01,31201625277.249,Belgium,World
@@ -402,7 +407,7 @@ date,value,reporter,partner
 2021-04-01,3822296299.823,New Zealand,World
 2021-04-01,517088108.74,Nicaragua,World
 2021-04-01,4335660181.513,Nigeria,World
-2021-04-01,10199190538.199,Norway,World
+2021-04-01,10201527979.202,Norway,World
 2021-04-01,2221420214.363,Pakistan,World
 2021-04-01,279642439,Panama,World
 2021-04-01,936743295,Paraguay,World
@@ -443,6 +448,7 @@ date,value,reporter,partner
 2021-05-01,1062896111.38,Azerbaijan,World
 2021-05-01,6812691211.24,Argentina,World
 2021-05-01,29766590771.045,Australia,World
+2021-05-01,897539623.575,Bahrain,World
 2021-05-01,261063112.4,Armenia,World
 2021-05-01,52168477,Barbados,World
 2021-05-01,31088737987.174,Belgium,World
@@ -510,7 +516,7 @@ date,value,reporter,partner
 2021-05-01,4234706972.004,New Zealand,World
 2021-05-01,536891109.62,Nicaragua,World
 2021-05-01,3843745162.706,Nigeria,World
-2021-05-01,10943139106.025,Norway,World
+2021-05-01,10942709798.944,Norway,World
 2021-05-01,1670818598.782,Pakistan,World
 2021-05-01,158647591,Panama,World
 2021-05-01,1001751160,Paraguay,World
@@ -552,12 +558,13 @@ date,value,reporter,partner
 2021-06-01,1383868348.82,Azerbaijan,World
 2021-06-01,7009853738.19,Argentina,World
 2021-06-01,31456495682.292,Australia,World
+2021-06-01,1122224473.807,Bahrain,World
 2021-06-01,280165837.98,Armenia,World
 2021-06-01,51549240,Barbados,World
 2021-06-01,34612742246.949,Belgium,World
 2021-06-01,929190758.94,Bolivia (Plurinational State of),World
 2021-06-01,774523322.596,Bosnia Herzegovina,World
-2021-06-01,685847978.084,Botswana,World
+2021-06-01,685915314.79,Botswana,World
 2021-06-01,28257895138,Brazil,World
 2021-06-01,18716952.37,Belize,World
 2021-06-01,3530985367.079,Bulgaria,World
@@ -619,7 +626,7 @@ date,value,reporter,partner
 2021-06-01,4233357171.489,New Zealand,World
 2021-06-01,573429591.14,Nicaragua,World
 2021-06-01,4368779420.042,Nigeria,World
-2021-06-01,11789437662.158,Norway,World
+2021-06-01,11883642236.586,Norway,World
 2021-06-01,3001848134.273,Pakistan,World
 2021-06-01,420338069,Panama,World
 2021-06-01,1064101738,Paraguay,World
@@ -661,6 +668,7 @@ date,value,reporter,partner
 2021-07-01,2584509490.32,Azerbaijan,World
 2021-07-01,7251906933.18,Argentina,World
 2021-07-01,31102554204.174,Australia,World
+2021-07-01,1028891798.199,Bahrain,World
 2021-07-01,252817822.71,Armenia,World
 2021-07-01,24676888.5,Barbados,World
 2021-07-01,32004033848.767,Belgium,World
@@ -728,7 +736,7 @@ date,value,reporter,partner
 2021-07-01,4017043860.98,New Zealand,World
 2021-07-01,595680142.62,Nicaragua,World
 2021-07-01,4089729440.117,Nigeria,World
-2021-07-01,12262498671.781,Norway,World
+2021-07-01,12978938776.62,Norway,World
 2021-07-01,2339626297.949,Pakistan,World
 2021-07-01,281047882,Panama,World
 2021-07-01,1122758778,Paraguay,World
@@ -770,12 +778,13 @@ date,value,reporter,partner
 2021-08-01,1541800757.43,Azerbaijan,World
 2021-08-01,8098856231.98,Argentina,World
 2021-08-01,30731149256.074,Australia,World
+2021-08-01,1179480506.955,Bahrain,World
 2021-08-01,268080521.86,Armenia,World
 2021-08-01,26802441.5,Barbados,World
 2021-08-01,29770424671.568,Belgium,World
 2021-08-01,984235912.86,Bolivia (Plurinational State of),World
 2021-08-01,651825359.99,Bosnia Herzegovina,World
-2021-08-01,669161907.618,Botswana,World
+2021-08-01,669756874.293,Botswana,World
 2021-08-01,27216375900,Brazil,World
 2021-08-01,34641820.64,Belize,World
 2021-08-01,3373462111.739,Bulgaria,World
@@ -837,7 +846,7 @@ date,value,reporter,partner
 2021-08-01,3031721464.61,New Zealand,World
 2021-08-01,551197338.49,Nicaragua,World
 2021-08-01,3457675407.828,Nigeria,World
-2021-08-01,13348936774.22,Norway,World
+2021-08-01,14040879676.842,Norway,World
 2021-08-01,2251517573.244,Pakistan,World
 2021-08-01,321792891,Panama,World
 2021-08-01,885426161,Paraguay,World
@@ -864,6 +873,7 @@ date,value,reporter,partner
 2021-08-01,79014023.126,Togo,World
 2021-08-01,671365558.153,Trinidad and Tobago,World
 2021-08-01,1163606765.091,Tunisia,World
+2021-08-01,18860976378,Türkiye,World
 2021-08-01,6274584248.43,Ukraine,World
 2021-08-01,666136200.2,North Macedonia,World
 2021-08-01,3279103225.71,Egypt,World
@@ -878,12 +888,13 @@ date,value,reporter,partner
 2021-09-01,1694854358.07,Azerbaijan,World
 2021-09-01,7570189290.44,Argentina,World
 2021-09-01,27712268462.702,Australia,World
+2021-09-01,1378542027.038,Bahrain,World
 2021-09-01,224333442.15,Armenia,World
 2021-09-01,30617023.5,Barbados,World
 2021-09-01,34306453997.443,Belgium,World
 2021-09-01,943325319.67,Bolivia (Plurinational State of),World
 2021-09-01,804131070.3,Bosnia Herzegovina,World
-2021-09-01,587767853.459,Botswana,World
+2021-09-01,587769246.631,Botswana,World
 2021-09-01,24376129510,Brazil,World
 2021-09-01,21462094.815,Belize,World
 2021-09-01,3643442766.097,Bulgaria,World
@@ -935,7 +946,7 @@ date,value,reporter,partner
 2021-09-01,26602315587.284,Malaysia,World
 2021-09-01,216885063.481,Malta,World
 2021-09-01,154627523.205,Mauritius,World
-2021-09-01,41680024513,Mexico,World
+2021-09-01,41754363439,Mexico,World
 2021-09-01,801754942.26,Mongolia,World
 2021-09-01,294897326,Rep. of Moldova,World
 2021-09-01,42177561.226,Montenegro,World
@@ -945,7 +956,7 @@ date,value,reporter,partner
 2021-09-01,3101651475.516,New Zealand,World
 2021-09-01,506791327.58,Nicaragua,World
 2021-09-01,4959252355.231,Nigeria,World
-2021-09-01,15123696997.45,Norway,World
+2021-09-01,16192207583.843,Norway,World
 2021-09-01,2412207926.954,Pakistan,World
 2021-09-01,318361017,Panama,World
 2021-09-01,861988533,Paraguay,World
@@ -987,6 +998,7 @@ date,value,reporter,partner
 2021-10-01,2217991094.57,Azerbaijan,World
 2021-10-01,6862570097.27,Argentina,World
 2021-10-01,28017649945.538,Australia,World
+2021-10-01,1126225343.649,Bahrain,World
 2021-10-01,264838172.39,Armenia,World
 2021-10-01,29519505.5,Barbados,World
 2021-10-01,35861740848.43,Belgium,World
@@ -1043,7 +1055,7 @@ date,value,reporter,partner
 2021-10-01,27484497596.865,Malaysia,World
 2021-10-01,288364362.422,Malta,World
 2021-10-01,143875912.196,Mauritius,World
-2021-10-01,43054971587,Mexico,World
+2021-10-01,41858779146,Mexico,World
 2021-10-01,1110514188.18,Mongolia,World
 2021-10-01,352247525,Rep. of Moldova,World
 2021-10-01,43284132.691,Montenegro,World
@@ -1053,7 +1065,7 @@ date,value,reporter,partner
 2021-10-01,3764110306.366,New Zealand,World
 2021-10-01,527637134.01,Nicaragua,World
 2021-10-01,4804802862.373,Nigeria,World
-2021-10-01,18585105339.378,Norway,World
+2021-10-01,21115320605.659,Norway,World
 2021-10-01,2511137205.378,Pakistan,World
 2021-10-01,230230894,Panama,World
 2021-10-01,888381335,Paraguay,World
@@ -1095,6 +1107,7 @@ date,value,reporter,partner
 2021-11-01,2950597973.53,Azerbaijan,World
 2021-11-01,6191188181.31,Argentina,World
 2021-11-01,29446026293.14,Australia,World
+2021-11-01,1211439182.62,Bahrain,World
 2021-11-01,297272469.59,Armenia,World
 2021-11-01,35799773.5,Barbados,World
 2021-11-01,34471585098.671,Belgium,World
@@ -1152,7 +1165,7 @@ date,value,reporter,partner
 2021-11-01,26841697498.55,Malaysia,World
 2021-11-01,283057593.293,Malta,World
 2021-11-01,154288668.217,Mauritius,World
-2021-11-01,45586981873,Mexico,World
+2021-11-01,45676662270,Mexico,World
 2021-11-01,1300884972.74,Mongolia,World
 2021-11-01,363865029,Rep. of Moldova,World
 2021-11-01,44568414.707,Montenegro,World
@@ -1162,7 +1175,7 @@ date,value,reporter,partner
 2021-11-01,4118175608.223,New Zealand,World
 2021-11-01,539475729.8,Nicaragua,World
 2021-11-01,5018493126.782,Nigeria,World
-2021-11-01,18145085724.232,Norway,World
+2021-11-01,20234316981.748,Norway,World
 2021-11-01,2906910373.496,Pakistan,World
 2021-11-01,332055382,Panama,World
 2021-11-01,851214281,Paraguay,World
@@ -1204,12 +1217,13 @@ date,value,reporter,partner
 2021-12-01,2407180551.23,Azerbaijan,World
 2021-12-01,6587062914.49,Argentina,World
 2021-12-01,30713563961.551,Australia,World
+2021-12-01,1245192700.151,Bahrain,World
 2021-12-01,302452077.23,Armenia,World
 2021-12-01,42377940.5,Barbados,World
 2021-12-01,35151067890.95,Belgium,World
 2021-12-01,971211525.08,Bolivia (Plurinational State of),World
 2021-12-01,796297934.59,Bosnia Herzegovina,World
-2021-12-01,620813012.244,Botswana,World
+2021-12-01,620822592.209,Botswana,World
 2021-12-01,24432406778,Brazil,World
 2021-12-01,21121698.675,Belize,World
 2021-12-01,3493170298.979,Bulgaria,World
@@ -1261,7 +1275,7 @@ date,value,reporter,partner
 2021-12-01,29417210195.26,Malaysia,World
 2021-12-01,302360068.747,Malta,World
 2021-12-01,146944867.192,Mauritius,World
-2021-12-01,47692803567,Mexico,World
+2021-12-01,47866480337,Mexico,World
 2021-12-01,446230811.25,Mongolia,World
 2021-12-01,324970867,Rep. of Moldova,World
 2021-12-01,66055523.551,Montenegro,World
@@ -1271,7 +1285,7 @@ date,value,reporter,partner
 2021-12-01,4118027954.575,New Zealand,World
 2021-12-01,554505596.58,Nicaragua,World
 2021-12-01,4190337564.025,Nigeria,World
-2021-12-01,20871984050.886,Norway,World
+2021-12-01,25045377827.597,Norway,World
 2021-12-01,2772155697.411,Pakistan,World
 2021-12-01,409713883,Panama,World
 2021-12-01,663482649,Paraguay,World
