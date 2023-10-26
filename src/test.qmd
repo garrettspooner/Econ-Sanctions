@@ -12,23 +12,46 @@ editor: visual
 
 #install.packages("tidyverse")
 #install.packages("tidymodels")
+#install.packages("quantmod")
+#install.packages(c("rvest", "dplyr"))
 
 library(tidyverse) 
 library(tidymodels)
+library(quantmod)
+library(rvest)
+library(dplyr)
+
+
 ```
 
 All demos should follow the form below.
 
 ```{r}
 #|: first-package-demo
-# short description of what your code does, as well as what data it's getting
+# Fetch Yahoo Finance data starting from 2010 for QQQ. The source can be modified. For instance, stooq may have more international indexes than Yahoo Finance. https://cran.r-project.org/web/packages/quantmod/quantmod.pdf
 
-# code here
+
+getSymbols("QQQ", from="2010-01-01", src="yahoo")
+head(QQQ)
+
+
 ```
 
 ```{r}
 #|: second-package-demo
-# short description of what your code does, as well as what data it's getting
+# Using the rvest package to scrape QQQ data from Yahoo Finance. rvest is compatible with a vast selection of other websites, not just Yahoo Finance. Data can include high, low, open, close, volume, etc.
 
 # code here
+
+# QQQ on Yahoo Finance.
+url <- "https://finance.yahoo.com/quote/QQQ/history?p=QQQ"
+
+# Fetching data
+webpage <- read_html(url)
+data <- webpage %>%
+  html_table(fill = TRUE) %>%
+  .[[1]]
+
+head(data)
+
 ```
