@@ -14,12 +14,18 @@ editor: visual
 #install.packages("tidymodels")
 #install.packages("quantmod")
 #install.packages(c("rvest", "dplyr"))
+#install.packages("Quandl")
+#install.packages("tidyquant")
+
 
 library(tidyverse) 
 library(tidymodels)
 library(quantmod)
 library(rvest)
 library(dplyr)
+library(Quandl)
+library(tidyquant)
+
 
 
 ```
@@ -53,5 +59,35 @@ data <- webpage %>%
   .[[1]]
 
 head(data)
+
+```
+
+```{r}
+#Package 3: Tidyquant
+
+#Tidyquant combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR.
+
+#Getting the stock prices of Apple (AAPL) from Yahoo Finance
+aapl_prices <- tq_get("AAPL", get = "stock.prices")
+
+#Getting the stock prices for a specific time frame
+appl_prices_limited <- tq_get("AAPL", get = "stock.prices", start_date = "2020-01-01", end_date = "2022-12-31")
+
+#Getting the stock prices of multiple stocks
+three_stocks <- tq_get(c("AAPL", "GOOG", "TSLA"), get = "stock.prices")
+
+```
+
+```{r}
+#Package 4: Quandl supports both time-series data and datatables. 
+
+#Getting the stock price data for Apple (AAPL)
+appl_quandl <- Quandl('WIKI/AAPL')
+
+#Getting the stock price data for a specific time frame 
+appl_limited_quandl = Quandl("WIKI/AAPL", start_date = "2015-01-01", end_date = "2022-12-31")
+
+
+
 
 ```

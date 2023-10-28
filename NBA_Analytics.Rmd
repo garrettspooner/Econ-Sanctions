@@ -1,0 +1,53 @@
+---
+title: "SportAnalytics"
+author: "Sahil Patel"
+date: "2023-10-17"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(nbastatR)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r}
+#Provides data on all nba players
+assign_nba_players()
+```
+
+```{r}
+assign_nba_teams()
+
+```
+
+```{r}
+#Getting the roster for one team for a particular season
+rosters <- team_season_roster(team = "Denver Nuggets", season = 2023)
+```
+```{r}
+teams_rosters()
+```
+
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
