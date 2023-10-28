@@ -65,7 +65,7 @@ head(data)
 ```{r}
 #Package 3: Tidyquant
 
-#Tidyquant combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR.
+#Tidyquant combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR. Tidyquant also contains data for indexes. Apple was used in this example, but "AAPL" can be replaced with any stock ticker to get the information for a stock.
 
 #Getting the stock prices of Apple (AAPL) from Yahoo Finance
 aapl_prices <- tq_get("AAPL", get = "stock.prices")
@@ -79,7 +79,7 @@ three_stocks <- tq_get(c("AAPL", "GOOG", "TSLA"), get = "stock.prices")
 ```
 
 ```{r}
-#Package 4: Quandl supports both time-series data and datatables. 
+#Package 4: Quandl supports both time-series data and datatables. Apple was used in this example, but "AAPL" can be replaced with any stock ticker to get the information for a stock.
 
 #Getting the stock price data for Apple (AAPL)
 appl_quandl <- Quandl('WIKI/AAPL')
