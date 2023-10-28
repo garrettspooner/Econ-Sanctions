@@ -16,6 +16,7 @@ editor: visual
 #install.packages(c("rvest", "dplyr"))
 #install.packages("Quandl")
 #install.packages("tidyquant")
+#install.packages("yfR")
 
 
 library(tidyverse) 
@@ -25,7 +26,7 @@ library(rvest)
 library(dplyr)
 library(Quandl)
 library(tidyquant)
-
+library(yfR)
 
 
 ```
@@ -91,3 +92,13 @@ appl_limited_quandl = Quandl("WIKI/AAPL", start_date = "2015-01-01", end_date = 
 
 
 ```
+
+```{r}
+#|: fifth-package-demo
+#Package 5: yfR supports downloading time series stock market data from the Yahoo! finance site, straightforward library with seven functions supporting downloading data from Yahoo! finance
+
+month_prior <- Sys.Date() - 30
+today <- Sys.Date()
+yf_get("TGT", first_date = month_prior, last_date = today, freq_data = "daily") #downloads stock market data for Target (TGT) with date and frequency specifications
+```
+
