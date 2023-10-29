@@ -6,18 +6,17 @@ editor: visual
 
 ## R Package Demos
 
-```{r}
+```{r message=false, warning=false}
 #|: package-installation
 # load/install all necessary packages
 
-#install.packages("tidyverse")
-#install.packages("tidymodels")
-#install.packages("quantmod")
-#install.packages(c("rvest", "dplyr"))
-#install.packages("Quandl")
-#install.packages("tidyquant")
-#install.packages("yfR")
-
+# install.packages("tidyverse")
+# install.packages("tidymodels")
+# install.packages("quantmod")
+# install.packages(c("rvest", "dplyr"))
+# install.packages("Quandl")
+# install.packages("tidyquant")
+# install.packages("yfR")
 
 library(tidyverse) 
 library(tidymodels)
@@ -27,78 +26,66 @@ library(dplyr)
 library(Quandl)
 library(tidyquant)
 library(yfR)
-
-
 ```
 
 All demos should follow the form below.
 
 ```{r}
-#|: first-package-demo
-# Fetch Yahoo Finance data starting from 2010 for QQQ. The source can be modified. For instance, stooq may have more international indexes than Yahoo Finance. https://cran.r-project.org/web/packages/quantmod/quantmod.pdf
+#|: quantmod-demo
+# fetch Yahoo Finance data starting from 2010 for ticker QQQ
+# pkg docs: https://cran.r-project.org/web/packages/quantmod/quantmod.pdf
+# current srcs available (from pkg docs): yahoo, google, MySQL, FRED, csv, RData, oanda, and av
+# yahoo is only working src (currently)
 
-
-getSymbols("QQQ", from="2010-01-01", src="yahoo")
-head(QQQ)
-
-
+options(max.print = 100000) # to view all rows
+getSymbols("QQQ", from="2010-01-01", src="yahoo") # loading QQQ xts object into environment
+QQQ <- as.data.frame(QQQ)
+view(QQQ)
 ```
 
 ```{r}
-#|: second-package-demo
-# Using the rvest package to scrape QQQ data from Yahoo Finance. rvest is compatible with a vast selection of other websites, not just Yahoo Finance. Data can include high, low, open, close, volume, etc.
+#|: tidyquant-demo
 
-# code here
+# combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR
+# contains data for indexes 
+# pkg docs: https://cran.r-project.org/web/packages/tidyquant/tidyquant.pdf
 
-# QQQ on Yahoo Finance.
-url <- "https://finance.yahoo.com/quote/QQQ/history?p=QQQ"
-
-# Fetching data
-webpage <- read_html(url)
-data <- webpage %>%
-  html_table(fill = TRUE) %>%
-  .[[1]]
-
-head(data)
-
-```
-
-```{r}
-#Package 3: Tidyquant
-
-#Tidyquant combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR. Tidyquant also contains data for indexes. Apple was used in this example, but "AAPL" can be replaced with any stock ticker to get the information for a stock.
-
-#Getting the stock prices of Apple (AAPL) from Yahoo Finance
+# getting the stock prices of Apple (AAPL) from Yahoo Finance
 aapl_prices <- tq_get("AAPL", get = "stock.prices")
 
-#Getting the stock prices for a specific time frame
+# getting the stock prices for a specific time frame
 appl_prices_limited <- tq_get("AAPL", get = "stock.prices", start_date = "2020-01-01", end_date = "2022-12-31")
 
-#Getting the stock prices of multiple stocks
-three_stocks <- tq_get(c("AAPL", "GOOG", "TSLA"), get = "stock.prices")
+# getting the stock prices of multiple stocks
+three_stocks <- tq_get(c("DAX", "DJIA"), get = "stock.prices")
 
+view(aapl_prices)
+view(appl_prices_limited)
+view(three_stocks)
 ```
 
 ```{r}
-#Package 4: Quandl supports both time-series data and datatables. Apple was used in this example, but "AAPL" can be replaced with any stock ticker to get the information for a stock.
+#|: quandl-demo
+# supports both time-series data and data tables
+# pkg docs: https://cran.r-project.org/web/packages/Quandl/Quandl.pdf
 
-#Getting the stock price data for Apple (AAPL)
+# getting data for AAPL (Apple) ticker
 appl_quandl <- Quandl('WIKI/AAPL')
+view(appl_quandl)
 
-#Getting the stock price data for a specific time frame 
+# getting data for specific time frame
 appl_limited_quandl = Quandl("WIKI/AAPL", start_date = "2015-01-01", end_date = "2022-12-31")
-
-
-
-
+view(appl_limited_quandl)
 ```
 
 ```{r}
-#|: fifth-package-demo
-#Package 5: yfR supports downloading time series stock market data from the Yahoo! finance site, straightforward library with seven functions supporting downloading data from Yahoo! finance
+#|: yfR-demo
+# supports downloading time series stock market data from Yahoo Finance 
+# pkg docs: https://docs.ropensci.org/yfR/
 
-month_prior <- Sys.Date() - 30
-today <- Sys.Date()
-yf_get("TGT", first_date = month_prior, last_date = today, freq_data = "daily") #downloads stock market data for Target (TGT) with date and frequency specifications
+# downloads ten years of financial data for Target (TGT) with date and frequency specifications
+first_date <- Sys.Date() - 3650
+last_date <- Sys.Date()
+TGT <- yf_get("TGT", first_date = first_date, last_date = last_date, freq_data = "daily") 
+view(TGT)
 ```
-
