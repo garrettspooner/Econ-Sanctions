@@ -19,7 +19,7 @@ git push
 ## Running the Program
 * Simply specify the year for which you'd like to gather data by editing the year variable in the first code chunk of the ```Viewing + Getting Data``` section and then run all code chunks. The functions provided will query, clean, merge, convert frequency, and calculate beta for all available countries.
 * Make sure you are in the ```src``` folder before running the program; otherwise, files won't be able to be written to the data folder, and the function will throw an error.
-## Documentation
+## Documentation (```beta.qmd```)
 ### Comtrade
 This part of the program utilizes the comtradeapicall Python package to implement additional functionality.
 To query export and import data from Comtrade, you can use the following methods:
