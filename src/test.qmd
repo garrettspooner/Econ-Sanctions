@@ -17,15 +17,17 @@ editor: visual
 # install.packages("Quandl")
 # install.packages("tidyquant")
 # install.packages("yfR")
+install.packages("alphavantager")
 
 library(tidyverse) 
 library(tidymodels)
 library(quantmod)
 library(rvest)
 library(dplyr)
-library(Quandl)
-library(tidyquant)
-library(yfR)
+# library(Quandl)
+# library(tidyquant)
+# library(yfR)
+library(alphavantager)
 ```
 
 All demos should follow the form below.
@@ -88,4 +90,16 @@ first_date <- Sys.Date() - 3650
 last_date <- Sys.Date()
 TGT <- yf_get("TGT", first_date = first_date, last_date = last_date, freq_data = "daily") 
 view(TGT)
+```
+
+```{r}
+#|: alphavantager-demo
+
+# supports downloading financial information from Alpha Vantage API
+# pkg docs: https://cran.r-project.org/web/packages/alphavantager/alphavantager.pdf 
+
+# uses unique alphavantager key to download 5,000 days worth of EUR/USD exhchange rate data (from 08/27/04) 
+av_api_key("SC57WJD3FOM5GVYG")
+av_get("EUR/USD", av_fun = "FX_DAILY", outputsize = "full")
+
 ```
