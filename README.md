@@ -19,7 +19,8 @@ git push
 ## Running the Program
 * Simply specify the year for which you'd like to gather data by editing the year variable in the first code chunk of the ```Everything Data``` section and then run all code chunks (in order). The functions provided will query, clean, merge, convert frequency, and calculate beta for all available countries.
 * Make sure you are in the ```src``` folder before running the program; otherwise, files won't be able to be written to the data folder, and the function will throw an error.
-* If you'd like to use some of the functions used to calculate beta individually, more information is provided below.
+* After calculating beta, you can delete all the excess files created during the beta-calculation process by running the ```delete(years)``` function provided, which takes in a vector of years for which to delete supplementary data. (See the code chunks under the ```Deleting Data``` section for an example.)
+* If you'd like to use some of the functions individually, more information on their functionality (and data source) is provided below.
 ## Documentation (for ```beta.qmd```)
 ### Comtrade
 This part of the program utilizes the comtradeapicall Python package to implement additional functionality.
