@@ -17,6 +17,7 @@ editor: visual
 #install.packages("Quandl")
 #install.packages("tidyquant")
 #install.packages("yfR")
+#install.packages("alphavantager")
 
 
 library(tidyverse) 
@@ -27,6 +28,7 @@ library(dplyr)
 library(Quandl)
 library(tidyquant)
 library(yfR)
+library(alphavantager)
 
 
 ```
@@ -102,3 +104,15 @@ today <- Sys.Date()
 yf_get("TGT", first_date = month_prior, last_date = today, freq_data = "daily") #downloads stock market data for Target (TGT) with date and frequency specifications
 ```
 
+```{r}
+#|: sixth-package-demo
+
+# Example: Fetching USD/RUB exchange rate data with alphavantager
+
+av_api_key("AKODC2XAAZIFHH9J")
+symbol <- "USD/RUB"
+forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
+
+# The data is returned as an xts object
+head(data)
+```
