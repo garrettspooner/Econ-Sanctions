@@ -107,6 +107,13 @@ view(TGT)
 
 # uses unique alphavantager key to download 5,000 days worth of EUR/USD exhchange rate data (from 08/27/04) 
 av_api_key("SC57WJD3FOM5GVYG")
-av_get("EUR/USD", av_fun = "FX_DAILY", outputsize = "full")
-
+av_get(symbol     = "DAX",
+       av_fun     = "TIME_SERIES_DAILY",
+       outputsize = "full")
+av_get(symbol     = "STI",
+       av_fun     = "TIME_SERIES_DAILY",
+       outputsize = "full")
+av_get(symbol     = "CHI",
+       av_fun     = "TIME_SERIES_DAILY",
+       outputsize = "full")
 ```
