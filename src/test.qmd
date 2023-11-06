@@ -33,26 +33,6 @@ library(alphavantager)
 All demos should follow the form below.
 
 ```{r}
-#|: quantmod-demo
-# fetch Yahoo Finance data starting from 2010 for ticker QQQ
-# pkg docs: https://cran.r-project.org/web/packages/quantmod/quantmod.pdf
-# current srcs available (from pkg docs): yahoo, google, MySQL, FRED, csv, RData, oanda, and av
-# yahoo is only working src (currently) but the getSymbols() method is compatible with the following and csv, mysql, and rdata:
-# yahoo finance - available data: https://finance.yahoo.com/world-indices/
-# google finance - https://www.google.com/finance/markets/indexes?hl=en
-# oanda - https://www.oanda.com/rw-en/trading/instruments/
-# orats - $99/month minimum
-# alphavantage - can search symbols with a free api key. ex: https://www.alphavantage.co/query?function=SYMBOL_SEARCH&datatype=csv&keywords=Index&apikey=
-# federal reserve - https://fred.stlouisfed.org/
-''
-
-options(max.print = 100000) # to view all rows
-getSymbols("QQQ", from="2010-01-01", src="yahoo") # loading QQQ xts object into environment
-QQQ <- as.data.frame(QQQ)
-view(QQQ)
-```
-
-```{r}
 #|: tidyquant-demo
 
 # combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR
@@ -98,18 +78,6 @@ view(appl_limited_quandl)
 neurope_data = Quandl("NASDAQOMX/NQEU") 
 view(neurope_data)
 
-```
-
-```{r}
-#|: yfR-demo
-# supports downloading time series stock market data from Yahoo Finance 
-# pkg docs: https://docs.ropensci.org/yfR/
-
-# downloads ten years of financial data for Target (TGT) with date and frequency specifications
-first_date <- Sys.Date() - 3650
-last_date <- Sys.Date()
-TGT <- yf_get("TGT", first_date = first_date, last_date = last_date, freq_data = "daily") 
-view(TGT)
 ```
 
 ```{r}
