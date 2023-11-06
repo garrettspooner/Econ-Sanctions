@@ -93,6 +93,11 @@ view(appl_quandl)
 # getting data for specific time frame
 appl_limited_quandl = Quandl("WIKI/AAPL", start_date = "2015-01-01", end_date = "2022-12-31")
 view(appl_limited_quandl)
+
+#getting data for the NASDAQ Europe Index
+neurope_data = Quandl("NASDAQOMX/NQEU") 
+view(neurope_data)
+
 ```
 
 ```{r}
