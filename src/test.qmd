@@ -68,9 +68,17 @@ appl_prices_limited <- tq_get("AAPL", get = "stock.prices", start_date = "2020-0
 # getting the stock prices of multiple stocks
 three_stocks <- tq_get(c("DAX", "DJIA"), get = "stock.prices")
 
+#getting the prices for the SPDR S&P 500 ETF, which tracks the S&P 500 index
+spy_prices = tq_get("SPY", get = "stock.prices")
+
+#getting the prices for the iShares MSCI South Africa ETF, which tracks the MSCI South Africa 25/50 Index
+eza_prices = tq_get("EZA", get = "stock.prices")
+
 view(aapl_prices)
 view(appl_prices_limited)
 view(three_stocks)
+view(spy_prices)
+view(eza_prices)
 ```
 
 ```{r}
