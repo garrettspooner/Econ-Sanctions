@@ -85,17 +85,48 @@ view(neurope_data)
 # supports downloading financial information from Alpha Vantage API
 # pkg docs: https://cran.r-project.org/web/packages/alphavantager/alphavantager.pdf 
 
-# uses unique alphavantager key to download 5,000 days worth of EUR/USD exhchange rate data (from 08/27/04) 
-av_api_key("SC57WJD3FOM5GVYG")
-av_get(symbol     = "DAX",
-       av_fun     = "TIME_SERIES_DAILY",
-       outputsize = "full")
-av_get(symbol     = "STI",
-       av_fun     = "TIME_SERIES_DAILY",
-       outputsize = "full")
-av_get(symbol     = "CHI",
-       av_fun     = "TIME_SERIES_DAILY",
-       outputsize = "full")
+# uses unique alphavantager key to try to download international stock indices
+
+#av_api_key("SC57WJD3FOM5GVYG")
+#av_get(symbol     = "DAX",  #** NOT THE DAX after furhter research
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "full")
+#av_get(symbol     = "STI", #** NOT THE STI after furhter research
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "full")
+#av_get(symbol     = "CHI",  #** NOT THE CAC 40 after furhter research
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "full")
+```
+
+```{r}
+#|: alphavantager-demo-1 (cot'd)
+# from Garrett
+# More indice data (continued from above)
+
+#av_api_key("SC57WJD3FOM5GVYG")
+#av_get(symbol     = "GSP",  #** NOT THE S&P after furhter research
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "compact")
+
+#av_get(symbol     = "TEDPIX", #Tried TEPIX, TSE, both work but not the correct index
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "full")
+
+
+```
+
+```{r}
+#|: alphavantager-demo-1 (cot'd)
+# from Garrett
+# using search function
+
+#Alphavantager ticker search: URL below uses keywords and unique API key to list ETF, mutual fund, and equity symbols to use in alphavantager package. Conclusion after using search function: international stock index data not available in package.  
+
+
+# https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=FILLHERE&apikey=FILLHERE 
+
+
 ```
 
 ```{r}
@@ -103,8 +134,8 @@ av_get(symbol     = "CHI",
 # from Jayson
 # Example: fetching USD/RUB exchange rate data
 
-av_api_key("AKODC2XAAZIFHH9J")
-symbol <- "USD/RUB"
-forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
-head(forex_data) # xts object
+#av_api_key("AKODC2XAAZIFHH9J")
+#symbol <- "USD/RUB"
+#forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
+#head(forex_data) # xts object
 ```
