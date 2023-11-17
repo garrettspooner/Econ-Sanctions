@@ -10,23 +10,11 @@ editor: visual
 #|: package-installation
 # load/install all necessary packages
 
-# install.packages("tidyverse")
-# install.packages("tidymodels")
-# install.packages("quantmod")
-# install.packages(c("rvest", "dplyr"))
-# install.packages("Quandl")
-# install.packages("tidyquant")
-# install.packages("yfR")
-# install.packages("alphavantager")
-
 library(tidyverse) 
 library(tidymodels)
-library(quantmod)
-library(rvest)
 library(dplyr)
-# library(Quandl)
-# library(tidyquant)
-# library(yfR)
+library(quantmod)
+library(tidyquant)
 library(alphavantager)
 ```
 
@@ -77,7 +65,6 @@ view(appl_limited_quandl)
 #getting data for the NASDAQ Europe Index
 neurope_data = Quandl("NASDAQOMX/NQEU") 
 view(neurope_data)
-
 ```
 
 ```{r}
@@ -104,16 +91,14 @@ view(neurope_data)
 # from Garrett
 # More indice data (continued from above)
 
-#av_api_key("SC57WJD3FOM5GVYG")
+# av_api_key("SC57WJD3FOM5GVYG")
 #av_get(symbol     = "GSP",  #** NOT THE S&P after furhter research
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "compact")
 
-#av_get(symbol     = "TEDPIX", #Tried TEPIX, TSE, both work but not the correct index
-       #av_fun     = "TIME_SERIES_DAILY",
-       #outputsize = "full")
-
-
+# av_get(symbol     = "TSE", #Tried TEPIX, TSE, both work but not the correct index
+#        av_fun     = "TIME_SERIES_DAILY",
+#        outputsize = "full") |> view()
 ```
 
 ```{r}
@@ -123,10 +108,7 @@ view(neurope_data)
 
 #Alphavantager ticker search: URL below uses keywords and unique API key to list ETF, mutual fund, and equity symbols to use in alphavantager package. Conclusion after using search function: international stock index data not available in package.  
 
-
 # https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=FILLHERE&apikey=FILLHERE 
-
-
 ```
 
 ```{r}

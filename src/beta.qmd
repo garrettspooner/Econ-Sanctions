@@ -244,7 +244,7 @@ adjust_names <- function(df, check) {
           str_detect(partner, "Arab Emirates") ~ "United Arab Emirates",
           str_detect(partner, "Haiti") ~ "Haiti",
           str_detect(partner, "Russia") ~ "Russia",
-          TRUE ~ reporter
+          TRUE ~ partner
         )
       )
     }
@@ -388,7 +388,7 @@ beta_filter <- function(df, reporters, partners, year, keyword) {
   df <- as.data.frame(df)
   if (!is.null(reporters)) { df <- df |> filter(reporter %in% reporters) }
   if (!is.null(partners)) {df <- df |> filter(partner %in% partners) }
-  df <- df |> select(date, beta)
+  # df <- df |> select(date, beta)
   if (length(pull(df, date)) < 364) {
     first_day <- as.Date(ymd(year, truncated = 2L))
     last_day <- ceiling_date(first_day, 'year') - 1
@@ -589,25 +589,27 @@ delete(years)
 ```{r}
 # getting-iranian-data
 
-years <- c("2018, 2019, 2020, 2021, 2022, 2023")
-reporter <- "Iran"
-partner <- NULL
-
 beta <- data.frame(
   Date = as.Date(character(), format = "%Y-%m-%d"),
   beta = numeric(),
   stringsAsFactors = FALSE
 )
 
-for (year in years) {
-  curr_year <- format(as.Date(Sys.Date(), format="%d/%m/%Y"),"%Y")
-  if (as.double(year) >= as.double(curr_year) - 1) {
-      print(paste0("Cannot obtain data for ", year))
-  } else {
-      df <- everything(year)
-      df <- beta_filter(df, reporter, partner, year, NULL)
-      df <- df |> mutate(Date = date) |> select(Date, beta)
-      beta <- rbind(beta, df)
-  }
-}
+df1 <- everything("2021")
+df1 <- df1 |> filter(reporter == "Iran")
+
+df2 <- everything("2020")
+df2 <- df2 |> filter(reporter == "Iran")
+
+df3 <- everything("2019")
+df3 <- df3 |> filter(reporter == "Iran")
+
+df4 <- everything("2018")
+df4 <- df4 |> filter(reporter == "Iran")
+
+df5 <- everything("2017")
+df5 <- df5 |> filter(reporter == "Iran")
+
+beta <- rbind(df1, df2, df3, df4, df5)
+view(beta)
 ```
