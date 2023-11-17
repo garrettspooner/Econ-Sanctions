@@ -585,31 +585,3 @@ delete(years)
 
 # Source: Bergeijk, P.A.G. van (2010), Economic Diplomacy and the Geography of International Trade, Edward Elgar: Cheltenham.
 ```
-
-```{r}
-# getting-iranian-data
-
-beta <- data.frame(
-  Date = as.Date(character(), format = "%Y-%m-%d"),
-  beta = numeric(),
-  stringsAsFactors = FALSE
-)
-
-df1 <- everything("2021")
-df1 <- df1 |> filter(reporter == "Iran")
-
-df2 <- everything("2020")
-df2 <- df2 |> filter(reporter == "Iran")
-
-df3 <- everything("2019")
-df3 <- df3 |> filter(reporter == "Iran")
-
-df4 <- everything("2018")
-df4 <- df4 |> filter(reporter == "Iran")
-
-df5 <- everything("2017")
-df5 <- df5 |> filter(reporter == "Iran")
-
-beta <- rbind(df1, df2, df3, df4, df5)
-view(beta)
-```
