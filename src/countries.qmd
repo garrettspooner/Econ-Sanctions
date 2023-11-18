@@ -71,10 +71,18 @@ query_yahoo()
 url = 'https://finance.yahoo.com/quote/%5EJN0U.JO/history?period1=1506384000&period2=1696291200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
 file = "south_africa.csv"
 south_africa <- scrape_yahoo(url, file)
-view(south_africa)
 ```
 
 ## Asia
+
+```{r}
+#|: Iran
+# TSE (Tehran Stock Exchange)
+# uses its own  function (defined in iran.py) to scrape https://tsetmc.com/IndexInfo/32097828799138957 (website for TSE)
+
+scrape_iran("iran_financials.csv")
+iran <- read_csv("iran_financials.csv")
+```
 
 ```{r}
 #|: China
