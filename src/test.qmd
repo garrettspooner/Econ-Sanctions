@@ -14,7 +14,7 @@ library(tidyverse)
 library(tidymodels)
 library(dplyr)
 library(quantmod)
-library(tidyquant)
+#library(tidyquant)
 library(alphavantager)
 ```
 
@@ -81,14 +81,16 @@ view(neurope_data)
 
 # uses unique alphavantager key to try to download international stock indices
 
-#av_api_key("SC57WJD3FOM5GVYG")
+av_api_key("SC57WJD3FOM5GVYG")
 #av_get(symbol     = "DAX",  #** NOT THE DAX after furhter research
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
-#av_get(symbol     = "STI", #** NOT THE STI after furhter research
-       #av_fun     = "TIME_SERIES_DAILY",
+
+#av_get(symbol = "DJIA", #Global X Dow 30 Covered Call ETF
+       #av_fun = "TIME_SERIES_DAILY",
        #outputsize = "full")
-#av_get(symbol     = "CHI",  #** NOT THE CAC 40 after furhter research
+
+#av_get(symbol     = "CAC.PAR",  #Lyxor UCITS CAC 40 (DR) D-EUR
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
 ```
