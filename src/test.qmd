@@ -79,10 +79,10 @@ view(neurope_data)
 # supports downloading financial information from Alpha Vantage API
 # pkg docs: https://cran.r-project.org/web/packages/alphavantager/alphavantager.pdf 
 
-# uses unique alphavantager key to try to download international stock indices
+# uses unique alphavantager key to try to download international stock ETFs
 
 av_api_key("SC57WJD3FOM5GVYG")
-#av_get(symbol     = "DAX",  #** NOT THE DAX after furhter research
+#av_get(symbol     = "DAX",  #Global X DAX Germany ETF
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
 
@@ -93,21 +93,29 @@ av_api_key("SC57WJD3FOM5GVYG")
 #av_get(symbol     = "CAC.PAR",  #Lyxor UCITS CAC 40 (DR) D-EUR
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
+
+#av_get(symbol     = "PIN",  #Invesco India ETF
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "full")
 ```
 
 ```{r}
 #|: alphavantager-demo-1 (cot'd)
 # from Garrett
-# More indice data (continued from above)
+# Middle East ETF 
 
-# av_api_key("SC57WJD3FOM5GVYG")
-#av_get(symbol     = "GSP",  #** NOT THE S&P after furhter research
+av_api_key("SC57WJD3FOM5GVYG")
+#av_get(symbol     = "EIS",  #iShares MSCI Israel ETF
+       #av_fun     = "TIME_SERIES_DAILY",
+       #outputsize = "compact")
+
+#av_get(symbol     = "KSA",  #iShares MSCI Saudi Arabia ETF
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "compact")
 
 # av_get(symbol     = "TSE", #Tried TEPIX, TSE, both work but not the correct index
 #        av_fun     = "TIME_SERIES_DAILY",
-#        outputsize = "full") |> view()
+#        outputsize = "full")
 ```
 
 ```{r}
