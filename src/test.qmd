@@ -14,7 +14,7 @@ library(tidyverse)
 library(tidymodels)
 library(dplyr)
 library(quantmod)
-library(tidyquant)
+#library(tidyquant)
 library(alphavantager)
 ```
 
@@ -27,26 +27,33 @@ All demos should follow the form below.
 # contains data for indexes 
 # pkg docs: https://cran.r-project.org/web/packages/tidyquant/tidyquant.pdf
 
-# getting the stock prices of Apple (AAPL) from Yahoo Finance
-aapl_prices <- tq_get("AAPL", get = "stock.prices")
-
-# getting the stock prices for a specific time frame
-appl_prices_limited <- tq_get("AAPL", get = "stock.prices", start_date = "2020-01-01", end_date = "2022-12-31")
-
-# getting the stock prices of multiple stocks
-three_stocks <- tq_get(c("DAX", "DJIA"), get = "stock.prices")
-
-#getting the prices for the SPDR S&P 500 ETF, which tracks the S&P 500 index
-spy_prices = tq_get("SPY", get = "stock.prices")
-
 #getting the prices for the iShares MSCI South Africa ETF, which tracks the MSCI South Africa 25/50 Index
-eza_prices = tq_get("EZA", get = "stock.prices")
+eza_prices <- tq_get("EZA", get = "stock.prices")
 
-view(aapl_prices)
-view(appl_prices_limited)
-view(three_stocks)
-view(spy_prices)
+#getting data for the iShares MSCI Singapore ETF
+ews_prices <- tq_get("EWS", get = "stock.prices")
+
+#getting prices for the iShares MSCI Italy ETF
+ewi_prices <- tq_get("EWI", get = "stock.prices")
+
+#getting data for the iShares MSCI Qatar ETF
+qat_prices <- tq_get("QAT", get = "stock.prices")
+
+#getting data for the iShares MSCI UAE ETF
+uae_prices <- tq_get("UAE", get = "stock.prices")
+
+#getting prices for the Global X MSCI Pakistan ETF
+pak_prices <- tq_get("PAK", get = "stock.prices")
+
 view(eza_prices)
+view(ews_prices) 
+view(ewi_prices)
+view(qat_prices)
+view(uae_prices)
+view(pak_prices)
+
+
+
 ```
 
 ```{r}
@@ -74,14 +81,16 @@ view(neurope_data)
 
 # uses unique alphavantager key to try to download international stock indices
 
-#av_api_key("SC57WJD3FOM5GVYG")
+av_api_key("SC57WJD3FOM5GVYG")
 #av_get(symbol     = "DAX",  #** NOT THE DAX after furhter research
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
-#av_get(symbol     = "STI", #** NOT THE STI after furhter research
-       #av_fun     = "TIME_SERIES_DAILY",
+
+#av_get(symbol = "DJIA", #Global X Dow 30 Covered Call ETF
+       #av_fun = "TIME_SERIES_DAILY",
        #outputsize = "full")
-#av_get(symbol     = "CHI",  #** NOT THE CAC 40 after furhter research
+
+#av_get(symbol     = "CAC.PAR",  #Lyxor UCITS CAC 40 (DR) D-EUR
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
 ```
