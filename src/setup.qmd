@@ -70,6 +70,4 @@ virtualenv_install(
   c("export_ease", "comtradeapicall", "pandas", "requests", "flatten_json", "selenium", "webdriver_manager", "yfinance", "persiantools")
 )
 source_python("scrape.py")
-source_python("yfin.py")
-source_python("iran.py")
 ```
