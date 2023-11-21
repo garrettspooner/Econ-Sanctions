@@ -81,7 +81,8 @@ south_africa <- scrape_yahoo(url, file)
 # uses its own  function (defined in iran.py) to scrape https://tsetmc.com/IndexInfo/32097828799138957 (website for TSE)
 
 scrape_iran("iran_financials.csv")
-iran <- read_csv("iran_financials.csv")
+iran <- read_csv("../data/iran_financials.csv")
+view(iran)
 ```
 
 ```{r}

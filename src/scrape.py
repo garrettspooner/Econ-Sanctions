@@ -8,6 +8,8 @@ import yfinance as yf
 import pandas
 import time
 import os
+from persiantools.jdatetime import JalaliDate
+import datetime
 
 cwd = os.getcwd()
 directory = os.path.dirname(cwd)
@@ -123,7 +125,7 @@ def scrape_iran(file):
             time.sleep(1)
             if len(data) >= 100:
                 break 
-        df = pd.DataFrame(data, columns=['Date', 'Close', 'Low', 'High'])
+        df = pandas.DataFrame(data, columns=['Date', 'Close', 'Low', 'High'])
         jalali_dates = df['Date'].tolist()
         gregorian_dates = jalali_to_gregorian(jalali_dates)
         df['Date'] = gregorian_dates
