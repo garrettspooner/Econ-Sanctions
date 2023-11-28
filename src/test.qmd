@@ -13,8 +13,7 @@ editor: visual
 library(tidyverse) 
 library(tidymodels)
 library(dplyr)
-library(quantmod)
-#library(tidyquant)
+library(tidyquant)
 library(alphavantager)
 ```
 
@@ -51,27 +50,6 @@ view(ewi_prices)
 view(qat_prices)
 view(uae_prices)
 view(pak_prices)
-
-
-
-```
-
-```{r}
-#|: quandl-demo
-# supports both time-series data and data tables
-# pkg docs: https://cran.r-project.org/web/packages/Quandl/Quandl.pdf
-
-# getting data for AAPL (Apple) ticker
-appl_quandl <- Quandl('WIKI/AAPL')
-view(appl_quandl)
-
-# getting data for specific time frame
-appl_limited_quandl = Quandl("WIKI/AAPL", start_date = "2015-01-01", end_date = "2022-12-31")
-view(appl_limited_quandl)
-
-#getting data for the NASDAQ Europe Index
-neurope_data = Quandl("NASDAQOMX/NQEU") 
-view(neurope_data)
 ```
 
 ```{r}
@@ -105,9 +83,9 @@ av_api_key("SC57WJD3FOM5GVYG")
 # Middle East ETF 
 
 av_api_key("SC57WJD3FOM5GVYG")
-#av_get(symbol     = "EIS",  #iShares MSCI Israel ETF
-       #av_fun     = "TIME_SERIES_DAILY",
-       #outputsize = "compact")
+# av_get(symbol     = "EIS",  #iShares MSCI Israel ETF
+# av_fun     = "TIME_SERIES_DAILY",
+# outputsize = "compact")
 
 #av_get(symbol     = "KSA",  #iShares MSCI Saudi Arabia ETF
        #av_fun     = "TIME_SERIES_DAILY",
