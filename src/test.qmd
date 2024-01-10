@@ -15,6 +15,8 @@ library(tidymodels)
 library(dplyr)
 library(tidyquant)
 library(alphavantager)
+library(zoo)
+library(data.table)
 ```
 
 All demos should follow the form below.
@@ -111,8 +113,30 @@ av_api_key("SC57WJD3FOM5GVYG")
 # from Jayson
 # Example: fetching USD/RUB exchange rate data
 
-#av_api_key("AKODC2XAAZIFHH9J")
-#symbol <- "USD/RUB"
-#forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
-#head(forex_data) # xts object
+av_api_key("AKODC2XAAZIFHH9J")
+symbol <- "USD/RUB"
+forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
+head(forex_data) # xts object
+```
+
+```{r}
+ruble11_14 <- RUBUSD_X_2011_2014_
+# ruble11_14 |>
+#   rollapply("Open", 65, mean)
+
+ruble11_14 <- ruble11_14 |>
+  mutate(as.Date("Date")) 
+
+ruble11_14$Month <- months(ruble11_14$Date) 
+ruble11_14$Year<-format(ruble11_14$Date,format="%y")
+
+ruble11_14 <- ruble11_14 |>
+  mutate(Qtr = as.yearqtr(as.Date(Date)))|>
+  mutate(Open = as.numeric(Open))|>
+  drop_na()
+
+tapply(ruble11_14$Open, ruble11_14$Qtr, mean)
+
+means <- rollmean(ruble11_14$Open, 64)
+plot(means, type = "b")
 ```
