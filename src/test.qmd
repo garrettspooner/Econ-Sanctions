@@ -9,14 +9,13 @@ editor: visual
 ```{r message=false, warning=false}
 #|: package-installation
 # load/install all necessary packages
-
-library(tidyverse) 
-library(tidymodels)
-library(dplyr)
-library(tidyquant)
-library(alphavantager)
-library(zoo)
-library(data.table)
+#library(tidyverse) 
+#library(tidymodels)
+#library(dplyr)
+#library(tidyquant)
+#library(alphavantager)
+#library(zoo)
+#library(data.table)
 ```
 
 All demos should follow the form below.
@@ -29,29 +28,29 @@ All demos should follow the form below.
 # pkg docs: https://cran.r-project.org/web/packages/tidyquant/tidyquant.pdf
 
 #getting the prices for the iShares MSCI South Africa ETF, which tracks the MSCI South Africa 25/50 Index
-eza_prices <- tq_get("EZA", get = "stock.prices")
+#eza_prices <- tq_get("EZA", get = "stock.prices")
 
 #getting data for the iShares MSCI Singapore ETF
-ews_prices <- tq_get("EWS", get = "stock.prices")
+#ews_prices <- tq_get("EWS", get = "stock.prices")
 
 #getting prices for the iShares MSCI Italy ETF
-ewi_prices <- tq_get("EWI", get = "stock.prices")
+#ewi_prices <- tq_get("EWI", get = "stock.prices")
 
 #getting data for the iShares MSCI Qatar ETF
-qat_prices <- tq_get("QAT", get = "stock.prices")
+#qat_prices <- tq_get("QAT", get = "stock.prices")
 
 #getting data for the iShares MSCI UAE ETF
-uae_prices <- tq_get("UAE", get = "stock.prices")
+#uae_prices <- tq_get("UAE", get = "stock.prices")
 
 #getting prices for the Global X MSCI Pakistan ETF
-pak_prices <- tq_get("PAK", get = "stock.prices")
+#pak_prices <- tq_get("PAK", get = "stock.prices")
 
-view(eza_prices)
-view(ews_prices) 
-view(ewi_prices)
-view(qat_prices)
-view(uae_prices)
-view(pak_prices)
+#view(eza_prices)
+#view(ews_prices) 
+#view(ewi_prices)
+#view(qat_prices)
+#view(uae_prices)
+#view(pak_prices)
 ```
 
 ```{r}
@@ -122,6 +121,7 @@ head(forex_data) # xts object
 ```{r}
 #|: RWA trial
 # from ishrit
+
 
 ruble11_14 <- RUBUSD_X_2011_2014_
 # ruble11_14 |>
