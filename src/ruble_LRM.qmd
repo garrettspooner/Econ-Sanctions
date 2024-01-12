@@ -1,0 +1,121 @@
+---
+title: "Ruble LRM"
+format: html
+editor: visual
+---
+
+```{r}
+#imports and reading data
+
+library(tidyverse) 
+library(tidymodels) 
+post_sanc = read_csv("https://query1.finance.yahoo.com/v7/finance/download/RUB=X?period1=1070150400&period2=1704499200&interval=1d&events=history&includeAdjustedClose=true")
+pre_sanc = read_csv("/home/guest/Econ-Sanctions/data/RUBUSDX_2011-2014.csv")
+```
+
+**Developing LRM for pre-sanction data**
+
+```{r}
+#Cleaning pre_sanc data
+pre_sanc = pre_sanc|>
+  filter(Open != 'null')|>
+  mutate(Date = as.Date(Date, format = "%m/%d/%y"))|>
+  mutate(Open = as.double(Open),
+         High = as.double(High),
+         Low  = as.double(Low),
+         Close= as.double(Close),
+         `Adj Close` = as.double(`Adj Close`))
+```
+
+```{r}
+#plotting using ggplot pre_sanc data and LRM
+pre_sanc|>
+    ggplot(aes(x = Date, y = Open)) +
+    geom_line()+
+    geom_smooth(method = "lm", se = FALSE, col = "red")+#Using LM with `Open` to predict `Date`
+    labs(title = "Open Prices Over Time", x = "Date", y = "Open Price")
+  
+```
+
+```{r}
+#Creationg of LRM trained on pre_sanction opening prices 
+pre_sanc_LRM <- lm(pre_sanc$Open ~ pre_sanc$Date, data = pre_sanc)
+summary(pre_sanc_LRM)
+
+```
+
+-   final product: y = 1.102e-01 -5.005e-06x
+
+**Mapping pre_sanc_LRM to post sanction data**
+
+```{r}
+#cleaning post_sanction data
+post_sanc = post_sanc|>   
+  filter(Open != 'null')|>   
+  filter(Date > "2014-09-11")|>   
+  mutate(Open = 1 / as.double(Open),
+         High = 1 / as.double(High),
+         Low  = 1 / as.double(Low),
+         Close= 1 / as.double(Close),
+         `Adj Close` = 1 / as.double(`Adj Close`))|>
+  mutate(change = Open-lag(Open))|>                       #adding in daily change amount
+  mutate(rate_of_change = change/Open)|>                  #adding rate of that change
+  mutate(rate_of_change_adj = rate_of_change + 5.005e-06) #differnce in rot and LRM slope
+```
+
+```{r}
+#adding together the two data sets to visualize 
+all_data = bind_rows(pre_sanc,post_sanc)
+all_data$predict_val = 1.102e-01 - (5.005e-06*(as.numeric(all_data$Date)))
+```
+
+```{r}
+#visulaizing the LRM projected on post_sanction data
+colors <- c("Pre-Sanctions" = "orange",
+            "Post-Sanctions" = "black",
+            "Pre-Sanction Projections" = "red")
+all_data|>
+  ggplot(aes(x = Date))+
+  geom_line(aes(y = predict_val, color = "Pre-Sanction Projections"))+
+  geom_line(aes(y = Open,  color = "Pre-Sanctions"), data = all_data[1:962,])+
+  geom_line(aes(y = Open, color = "Post-Sanctions"), data = all_data[962:nrow(all_data),])+
+  labs(title = "RUB v. USD over time",
+       x = "Date",
+       y = "Opening value (RUB / USD)",
+       color = "Legend")+
+  scale_color_manual(values = colors)
+```
+
+**Developing LRM based on time off recovery and total loss over that period**
+
+-   predictor 1 (**TO DO**): time to 'recover' from initial drop, here I just looked at how long it took the ruble to have consecutive week of positive adjusted rate of change. This is very arbitrary and need to be worked on. I tried to do some research into when a currency is considered to have stabilized after a drop but could not find anything useful. Biggest thing this model need to work on is determining when the ruble steadies out after the initial fall off.
+
+-   predictor 2 : over the time to stabilize how much the currency lost in it's opening value
+
+-   Target : number of days the currency will take to reach predicted values of pre_sanctions LRM
+
+```{r}
+#grouping post_sanction data by week and printing out to manually see 2 weeks of positive
+post_sanc|>
+  mutate(index = 1:nrow(post_sanc) %/% 7)|>
+  group_by(index)|>
+  summarise(Average_ROTADJ = mean(rate_of_change_adj, na.rm = TRUE))
+```
+
+```{r}
+#Creating a data frame with specified values
+rec_data <- data.frame(
+  weeks = c(0, 16),
+  decrease_val = c(0, 0.01594078),
+  recovery = c(0, 2799)
+)
+
+
+```
+
+```{r}
+#using the specified values to create the LRM
+recovery_LRM <- lm(rec_data$recovery ~ rec_data$weeks + rec_data$decrease_val,
+                   data = rec_data)
+summary(recovery_LRM)
+```
