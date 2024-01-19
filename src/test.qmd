@@ -122,7 +122,6 @@ head(forex_data) # xts object
 #|: RWA trial
 # from ishrit
 
-
 ruble11_14 <- RUBUSD_X_2011_2014_
 # ruble11_14 |>
 #   rollapply("Open", 65, mean)
