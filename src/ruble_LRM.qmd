@@ -13,6 +13,8 @@ post_sanc = read_csv("https://query1.finance.yahoo.com/v7/finance/download/RUB=X
 pre_sanc = read_csv("/home/guest/Econ-Sanctions/data/RUBUSDX_2011-2014.csv")
 ```
 
+/home/guest/Econ-Sanctions/
+
 **Developing LRM for pre-sanction data**
 
 ```{r}
