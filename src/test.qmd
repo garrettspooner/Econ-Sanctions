@@ -6,22 +6,29 @@ editor: visual
 
 ## R Package Demos
 
-```{r message=false, warning=false}
-#|: package-installation
+```{r}
+#| label: package-installation
+#| message: false 
+#| warning: false
+
 # load/install all necessary packages
-#library(tidyverse) 
-#library(tidymodels)
-#library(dplyr)
-#library(tidyquant)
-#library(alphavantager)
-#library(zoo)
-#library(data.table)
+
+library(tidyverse) 
+library(tidymodels)
+library(dplyr)
+library(tidyquant)
+library(alphavantager)
+library(zoo)
+library(data.table)
+library(readxl)
+
+RUBUSD_X_2011_2014_ <- read_excel("~/Econ-Sanctions/data/rubleData/RUBUSD=X (2011-2014).xlsx")
 ```
 
 All demos should follow the form below.
 
 ```{r}
-#|: tidyquant-demo
+#| label: tidyquant-demo
 
 # combines the functionality of many packages, including quantmod, PerformanceAnalytics, zoo, xts, and TTR
 # contains data for indexes 
@@ -54,13 +61,13 @@ All demos should follow the form below.
 ```
 
 ```{r}
-#|: alphavantager-demo
+#| label: alphavantager-demo
 # supports downloading financial information from Alpha Vantage API
 # pkg docs: https://cran.r-project.org/web/packages/alphavantager/alphavantager.pdf 
 
 # uses unique alphavantager key to try to download international stock ETFs
 
-av_api_key("SC57WJD3FOM5GVYG")
+#av_api_key("SC57WJD3FOM5GVYG")
 #av_get(symbol     = "DAX",  #Global X DAX Germany ETF
        #av_fun     = "TIME_SERIES_DAILY",
        #outputsize = "full")
@@ -79,11 +86,11 @@ av_api_key("SC57WJD3FOM5GVYG")
 ```
 
 ```{r}
-#|: alphavantager-demo-1 (cot'd)
+#| label: alphavantager-demo-1
 # from Garrett
 # Middle East ETF 
 
-av_api_key("SC57WJD3FOM5GVYG")
+#av_api_key("SC57WJD3FOM5GVYG")
 # av_get(symbol     = "EIS",  #iShares MSCI Israel ETF
 # av_fun     = "TIME_SERIES_DAILY",
 # outputsize = "compact")
@@ -98,7 +105,7 @@ av_api_key("SC57WJD3FOM5GVYG")
 ```
 
 ```{r}
-#|: alphavantager-demo-1 (cot'd)
+#| label: alphavantager-demo-1-(cot'd)
 # from Garrett
 # using search function
 
@@ -108,26 +115,26 @@ av_api_key("SC57WJD3FOM5GVYG")
 ```
 
 ```{r}
-#|: alphavantager-demo-2
+#| label: alphavantager-demo-2
 # from Jayson
 # Example: fetching USD/RUB exchange rate data
 
-av_api_key("AKODC2XAAZIFHH9J")
-symbol <- "USD/RUB"
-forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
-head(forex_data) # xts object
+#av_api_key("AKODC2XAAZIFHH9J")
+#symbol <- "USD/RUB"
+#forex_data <- av_get(symbol, av_fun = "FX_DAILY", outputsize = "compact")
+#head(forex_data) # xts object
 ```
 
 ```{r}
-#|: RWA trial
+#| label: RWA trial
 # from ishrit
 
 ruble11_14 <- RUBUSD_X_2011_2014_
 # ruble11_14 |>
 #   rollapply("Open", 65, mean)
 
-ruble11_14 <- ruble11_14 |>
-  mutate(as.Date("Date")) 
+#ruble11_14 <- ruble11_14 |>
+  #mutate(as.Date("Date")) 
 
 ruble11_14$Month <- months(ruble11_14$Date) 
 ruble11_14$Year<-format(ruble11_14$Date,format="%y")
@@ -141,4 +148,13 @@ tapply(ruble11_14$Open, ruble11_14$Qtr, mean)
 
 means <- rollmean(ruble11_14$Open, 64)
 plot(means, type = "b")
+
+maxes <- rollmax(ruble11_14$Open, 64)
+plot(maxes, type = "b")
+
+medians <- rollmedian(ruble11_14$Open, 64)
+plot(medians, type = "b")
+
+sums <- rollsum(ruble11_14$Open, 64)
+plot(sums, type = "b")
 ```
