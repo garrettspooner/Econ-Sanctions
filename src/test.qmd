@@ -23,6 +23,8 @@ library(data.table)
 library(readxl)
 
 RUBUSD_X_2011_2014_ <- read_excel("~/Econ-Sanctions/data/rubleData/RUBUSD=X (2011-2014).xlsx")
+
+RUBUSD_X_2014_2024_ <- read.csv("~/Econ-Sanctions/data/HistoricalPrices_1.csv")
 ```
 
 All demos should follow the form below.
@@ -133,10 +135,10 @@ ruble11_14 <- RUBUSD_X_2011_2014_
 # ruble11_14 |>
 #   rollapply("Open", 65, mean)
 
-#ruble11_14 <- ruble11_14 |>
-  #mutate(as.Date("Date")) 
+# ruble11_14 <- ruble11_14 |>
+# mutate(as.Date("Date"))
 
-ruble11_14$Month <- months(ruble11_14$Date) 
+ruble11_14$Month <- months(ruble11_14$Date)
 ruble11_14$Year<-format(ruble11_14$Date,format="%y")
 
 ruble11_14 <- ruble11_14 |>
@@ -158,3 +160,20 @@ plot(medians, type = "b")
 sums <- rollsum(ruble11_14$Open, 64)
 plot(sums, type = "b")
 ```
+
+```{r}
+#| label: RWA-2014-2022
+
+means <- rollmean(RUBUSD_X_2014_2024_$Open, 64)
+plot(means, type = "b")
+
+maxes <- rollmax(RUBUSD_X_2014_2024_$Open, 64)
+plot(maxes, type = "b")
+
+medians <- rollmedian(RUBUSD_X_2014_2024_$Open, 64)
+plot(medians, type = "b")
+
+sums <- rollsum(RUBUSD_X_2014_2024_$Open, 64)
+plot(sums, type = "b")
+```
+
