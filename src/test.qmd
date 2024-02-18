@@ -16,15 +16,15 @@ editor: visual
 library(tidyverse) 
 library(tidymodels)
 library(dplyr)
-library(tidyquant)
+#library(tidyquant)
 library(alphavantager)
 library(zoo)
 library(data.table)
 library(readxl)
 
-RUBUSD_X_2011_2014_ <- read_excel("~/Econ-Sanctions/data/rubleData/RUBUSD=X (2011-2014).xlsx")
+RUBUSD_X_2011_2014_ <- read_excel("~/EconSanctions/data/rubleData/RUBUSD=X (2011-2014).xlsx")
 
-RUBUSD_X_2014_2024_ <- read.csv("~/Econ-Sanctions/data/HistoricalPrices_1.csv")
+RUBUSD_X_2014_2024_ <- read.csv("~/EconSanctions/data/HistoricalPrices_1.csv")
 ```
 
 All demos should follow the form below.
