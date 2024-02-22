@@ -8,10 +8,14 @@ editor: visual
 #imports and reading data
 
 library(tidyverse) 
-library(tidymodels) 
+library(tidymodels)
+library(readxl)
 post_sanc = read_csv("https://query1.finance.yahoo.com/v7/finance/download/RUB=X?period1=1070150400&period2=1704499200&interval=1d&events=history&includeAdjustedClose=true")
-pre_sanc = read_csv("/home/guest/Econ-Sanctions/data/RUBUSDX_2011-2014.csv")
+pre_sanc <- read_excel("~/EconSanctions/data/rubleData/RUBUSD=X (2011-2014).xlsx")
+
 ```
+
+/home/guest/Econ-Sanctions/
 
 **Developing LRM for pre-sanction data**
 
