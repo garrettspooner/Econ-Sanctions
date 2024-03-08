@@ -6,8 +6,8 @@ editor: visual
 
 ## Scraping Function
 
-```{'''{r}
-#|: function-to-scrape-tabular-financial-data-from-yahoo-finance
+```{r}
+# function-to-scrape-tabular-financial-data-from-yahoo-finance
 # returns a df that is ready for analysis
 # url: Yahoo Finance URL to scrape
 # file: name the resulting df will be saved as
