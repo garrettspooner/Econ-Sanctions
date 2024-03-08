@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Financial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="countries_files/libs/clipboard/clipboard.min.js"></script>
+<script src="countries_files/libs/quarto-html/quarto.js"></script>
+<script src="countries_files/libs/quarto-html/popper.min.js"></script>
+<script src="countries_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="countries_files/libs/quarto-html/anchor.min.js"></script>
+<link href="countries_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="countries_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="countries_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="countries_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="countries_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Financial</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="scraping-function" class="level2">
+<h2 class="anchored" data-anchor-id="scraping-function">Scraping Function</h2>
+<pre class="{'''{r}"><code>#|: function-to-scrape-tabular-financial-data-from-yahoo-finance
+# returns a df that is ready for analysis
+# url: Yahoo Finance URL to scrape
+# file: name the resulting df will be saved as
+
+scrape_yahoo &lt;- function(url, file) {
+  scrape(url, file)
+  df &lt;- read_csv(
+    file.path(
+      dirname(getwd()),
+      "data",
+      file
+    )
+  )
+  df &lt;- df[-c(1)]
+  df &lt;- df |&gt;
+    dplyr::rename(
+      Month = 1,
+      Day = 2, 
+      Year = 3, 
+      Open = 4,
+      High = 5,
+      Low = 6,
+      Close = 7,
+      Adj_Close = 8,
+      Volume = 9
+    )
+  df &lt;- df |&gt; 
+  mutate(
+    Date = paste(Month, Day, Year, sep = " "),
+    Date = ymd(as.Date(anydate(Date)))
+  ) |&gt; 
+  select(Date, Open, High, Low, Close, Adj_Close, Volume)
+  years &lt;- as.vector(df$Date)
+  years &lt;- as.Date(anydate(df$Date))
+  years &lt;- year(years)
+  years &lt;- unique(years)
+  min_year &lt;- as.double(min(years))
+  max_year &lt;- as.double(max(years))
+  print(paste0("Returning data for years ", min_year, " to ", max_year))
+  return(df)
+}</code></pre>
+</section>
+<section id="querying-function-alternative" class="level2">
+<h2 class="anchored" data-anchor-id="querying-function-alternative">Querying Function (Alternative)</h2>
+<pre class="{'''{r}"><code>#|: function-to-query-data-from-Yahoo-Finance
+# uses yfinance Python package to quickly and easily query data from Yahoo Finance
+# loops through all tickers defined in yfin.py and saves historical data for each to data folder
+# resulting file names follow the form "ticker_[ticker_symbol].csv"
+# for documentation on each ticker (i.e., to see which index corresponds to each ticker), see https://finance.yahoo.com/world-indices/
+
+query_yahoo()</code></pre>
+</section>
+<section id="africa" class="level2">
+<h2 class="anchored" data-anchor-id="africa">Africa</h2>
+<pre class="{'''{r}"><code>#|: South-Africa
+
+url = 'https://finance.yahoo.com/quote/%5EJN0U.JO/history?period1=1506384000&amp;period2=1696291200&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "south_africa.csv"
+south_africa &lt;- scrape_yahoo(url, file)</code></pre>
+</section>
+<section id="asia" class="level2">
+<h2 class="anchored" data-anchor-id="asia">Asia</h2>
+<pre class="{'''{r}"><code>#|: Iran
+# TSE (Tehran Stock Exchange)
+# uses its own  function (defined in iran.py) to scrape https://tsetmc.com/IndexInfo/32097828799138957 (website for TSE)
+
+scrape_iran("iran_financials.csv")
+iran &lt;- read_csv("../data/iran_financials.csv")
+view(iran)</code></pre>
+<pre class="{'''{r}"><code>#|: China
+# CSI 300
+
+url = 'https://finance.yahoo.com/quote/000300.SS/history?period1=1615334400&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "china.csv"
+china &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Hong-Kong
+# Hang Seng Index
+
+url = 'https://finance.yahoo.com/quote/%5EHSI/history?period1=536284800&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "hong_kong.csv"
+hong_kong &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: India
+# NIFTY 50
+
+url = 'https://finance.yahoo.com/quote/%5ENSEI/history?period1=1189900800&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "india.csv"
+india &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Indonesia
+# JKSE
+
+url = 'https://finance.yahoo.com/quote/%5EJKSE/history?period1=639273600&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "indonesia.csv"
+indonesia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Israel
+# TA-125
+
+url = 'https://finance.yahoo.com/quote/%5ETA125.TA/history?period1=718502400&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "israel.csv"
+israel &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Japan
+# Nikkei 225
+
+url = 'https://finance.yahoo.com/quote/%5EN225/history?period1=-157507200&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "japan.csv"
+japan &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Malaysia
+# FTSE Bursa Malaysia
+
+url = 'https://finance.yahoo.com/quote/%5EKLSE%3B1%3D9/history?period1=754790400&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "malaysia.csv"
+malaysia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Philippines 
+# PSEi
+
+url = 'https://finance.yahoo.com/quote/PSEI.PS/history?period1=536457600&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "philippines.csv"
+philippines &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Saudi-Arabia
+# Tadawul
+
+url = 'https://finance.yahoo.com/quote/%5ETASI.SR/history?period1=908755200&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "saudi_arabia.csv"
+saudi_arabia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Korea
+# KOSDAQ
+
+url = 'https://finance.yahoo.com/quote/%5EKQ11/history?period1=971568000&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "korea.csv"
+korea &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Taiwan
+# TWII
+
+url = 'https://finance.yahoo.com/quote/%5ETWII/history?period1=867715200&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "taiwan.csv"
+taiwan &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Thailand
+# SET Index
+
+url = 'https://finance.yahoo.com/quote/%5ESET.BK/history?period1=850176000&amp;period2=1693526400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "thailand.csv"
+thailand &lt;- scrape_yahoo(url, file)</code></pre>
+</section>
+<section id="europe" class="level2">
+<h2 class="anchored" data-anchor-id="europe">Europe</h2>
+<pre class="{'''{r}"><code>#|: Austria
+# FTX
+
+url = 'https://finance.yahoo.com/quote/%5EATX/history?period1=721440000&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "austria.csv"
+austria &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Belgium
+# BEL 20
+
+url = 'https://finance.yahoo.com/quote/%5EBFX/history?period1=671155200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "belgium.csv"
+belgium &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Bulgaria
+# SOFIX ETF
+
+url = 'https://nz.finance.yahoo.com/quote/BGX.L/history?period1=1538352000&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "bulgaria.csv"
+bulgaria &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Croatia
+# CROBEX ETF
+
+url = 'https://ca.finance.yahoo.com/quote/ECDC.DE/history?period1=1523836800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "croatia.csv"
+croatia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Denmark
+# OMXC25
+
+url = 'https://finance.yahoo.com/quote/%5EOMXC25/history?period1=1482105600&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "denmark.csv"
+denmark &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: England
+# LSE
+
+url = 'https://finance.yahoo.com/quote/LSEG.L/history?period1=995587200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "england.csv"
+england &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Finland
+# OMXH25
+
+url = 'https://finance.yahoo.com/quote/%5EOMXH25/history?period1=1362441600&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "finland.csv"
+finland &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: France
+# CAC 40
+
+# new way of webscraping (using selenium)
+url = 'https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&amp;period2=1689206400&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "france.csv"
+france &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Germany
+# DAX
+
+url = 'https://finance.yahoo.com/quote/%5EGDAXI/history?period1=567820800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "germany.csv"
+germany &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Greece
+# Composite Index
+
+url = 'https://finance.yahoo.com/quote/GD.AT/history?period1=867715200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "greece.csv"
+greece &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Ireland
+# ISEQ
+
+url = 'https://finance.yahoo.com/quote/%5EISEQ/history?period1=868492800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "ireland.csv"
+ireland &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Lithuania
+# OMX Vilnius GI
+
+url = 'https://finance.yahoo.com/quote/%5EOMXVGI/history?period1=1367280000&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "lithuania.csv"
+lithuania &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Netherlands
+# AEX Index
+
+url = 'https://finance.yahoo.com/quote/%5EAEX/history?period1=718848000&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "netherlands.csv"
+netherlands &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Norway
+# OBX
+
+url = 'https://finance.yahoo.com/quote/OBX.OL/history?period1=1096243200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "norway.csv"
+norway &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Portugal
+# PSI
+
+url = 'https://finance.yahoo.com/quote/PSI20.LS/history?period1=1367280000&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "portugal.csv"
+portugal &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Russia
+# MOEX
+
+url = 'https://finance.yahoo.com/quote/IMOEX.ME/history?period1=1362441600&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "russia.csv"
+russia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Serbia
+# BELEX 15 ETF
+
+url = 'https://finance.yahoo.com/quote/ESNB.DE/history?period1=1523836800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "serbia.csv"
+serbia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Slovakia
+# SAX ETF
+
+url = 'https://finance.yahoo.com/quote/SK9A.F/history?period1=1523836800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "slovakia.csv"
+slovakia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Spain
+# IBEX 35
+
+url = 'https://finance.yahoo.com/quote/%5EIBEX/history?period1=742435200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "spain.csv"
+spain &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Sweden
+# OMX Stockholm 30
+
+url = 'https://finance.yahoo.com/quote/%5EOMX/history?period1=1227139200&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "sweden.csv"
+sweden &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Switzerland
+# SSMI
+
+url = 'https://finance.yahoo.com/quote/%5ESSMI/history?period1=658108800&amp;period2=1694476800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "switzerland.csv"
+switzerland &lt;- scrape_yahoo(url, file)</code></pre>
+</section>
+<section id="oceania" class="level2">
+<h2 class="anchored" data-anchor-id="oceania">Oceania</h2>
+<pre class="{'''{r}"><code>#|: Australia
+# S&amp;P/ASX 300
+
+url = 'https://finance.yahoo.com/quote/%5EAXKO/history?period1=1362441600&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "australia.csv"
+australia &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: New-Zealand
+# NZX 50
+
+url = 'https://finance.yahoo.com/quote/%5ENZ50/history?period1=1041465600&amp;period2=1693612800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "new_zealand.csv"
+new_zealand &lt;- scrape_yahoo(url, file)</code></pre>
+</section>
+<section id="americas" class="level2">
+<h2 class="anchored" data-anchor-id="americas">Americas</h2>
+<pre class="{'''{r}"><code>#|: Argentina
+# MERVAL
+
+url = 'https://finance.yahoo.com/quote/%5EMERV/history?period1=844732800&amp;period2=1694044800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "argentina.csv"
+argentina &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Brazil 
+# IBOVESPA
+
+url = 'https://finance.yahoo.com/quote/%5EBVSP/history?period1=735868800&amp;period2=1694044800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "brazil.csv"
+brazil &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Canada
+# S&amp;P/TSX Composite
+
+url = 'https://finance.yahoo.com/quote/%5EGSPTSE/history?period1=299462400&amp;period2=1694044800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "canada.csv"
+canada &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: Mexico
+# IPC Mexico
+
+url = 'https://finance.yahoo.com/quote/%5EMXX/history?period1=689558400&amp;period2=1694044800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "mexico.csv"
+mexico &lt;- scrape_yahoo(url, file)</code></pre>
+<pre class="{'''{r}"><code>#|: United States
+# S&amp;P 500
+
+url = 'https://finance.yahoo.com/quote/%5EGSPC/history?period1=-1325635200&amp;period2=1694044800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true'
+file = "usa.csv"
+usa &lt;- scrape_yahoo(url, file)</code></pre>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">Other</h2>
+<pre class="{'''{r}"><code>#|: example-of-old-way-of-webscraping
+# France's CAC 40
+
+# old way of webscraping
+# france &lt;- read_html("https://finance.yahoo.com/quote/%5EFCHI/history?period1=636249600&amp;period2=1689033600&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true") |&gt; 
+#   html_table(fill = TRUE)
+# view(france)</code></pre>
+<pre class="{'''{r}"><code>#|: testing-investing.com
+
+# url &lt;- "https://www.investing.com/indices/dhaka-stock-exchange-30-historical-data"
+# table &lt;- read_html(url) |&gt; html_table(fill = TRUE)
+# table &lt;- as.data.frame(table[1]) |&gt; select(Date, Price, Open, High, Low)
+# view(table)</code></pre>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

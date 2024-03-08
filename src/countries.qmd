@@ -6,7 +6,7 @@ editor: visual
 
 ## Scraping Function
 
-```{r}
+```{'''{r}
 #|: function-to-scrape-tabular-financial-data-from-yahoo-finance
 # returns a df that is ready for analysis
 # url: Yahoo Finance URL to scrape
@@ -53,7 +53,7 @@ scrape_yahoo <- function(url, file) {
 
 ## Querying Function (Alternative)
 
-```{r}
+```{'''{r}
 #|: function-to-query-data-from-Yahoo-Finance
 # uses yfinance Python package to quickly and easily query data from Yahoo Finance
 # loops through all tickers defined in yfin.py and saves historical data for each to data folder
@@ -65,7 +65,7 @@ query_yahoo()
 
 ## Africa
 
-```{r}
+```{'''{r}
 #|: South-Africa
 
 url = 'https://finance.yahoo.com/quote/%5EJN0U.JO/history?period1=1506384000&period2=1696291200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
@@ -75,7 +75,7 @@ south_africa <- scrape_yahoo(url, file)
 
 ## Asia
 
-```{r}
+```{'''{r}
 #|: Iran
 # TSE (Tehran Stock Exchange)
 # uses its own  function (defined in iran.py) to scrape https://tsetmc.com/IndexInfo/32097828799138957 (website for TSE)
@@ -85,7 +85,7 @@ iran <- read_csv("../data/iran_financials.csv")
 view(iran)
 ```
 
-```{r}
+```{'''{r}
 #|: China
 # CSI 300
 
@@ -94,7 +94,7 @@ file = "china.csv"
 china <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Hong-Kong
 # Hang Seng Index
 
@@ -103,7 +103,7 @@ file = "hong_kong.csv"
 hong_kong <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: India
 # NIFTY 50
 
@@ -112,7 +112,7 @@ file = "india.csv"
 india <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Indonesia
 # JKSE
 
@@ -121,7 +121,7 @@ file = "indonesia.csv"
 indonesia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Israel
 # TA-125
 
@@ -130,7 +130,7 @@ file = "israel.csv"
 israel <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Japan
 # Nikkei 225
 
@@ -139,7 +139,7 @@ file = "japan.csv"
 japan <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Malaysia
 # FTSE Bursa Malaysia
 
@@ -148,7 +148,7 @@ file = "malaysia.csv"
 malaysia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Philippines 
 # PSEi
 
@@ -157,7 +157,7 @@ file = "philippines.csv"
 philippines <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Saudi-Arabia
 # Tadawul
 
@@ -166,7 +166,7 @@ file = "saudi_arabia.csv"
 saudi_arabia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Korea
 # KOSDAQ
 
@@ -175,7 +175,7 @@ file = "korea.csv"
 korea <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Taiwan
 # TWII
 
@@ -184,7 +184,7 @@ file = "taiwan.csv"
 taiwan <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Thailand
 # SET Index
 
@@ -195,7 +195,7 @@ thailand <- scrape_yahoo(url, file)
 
 ## Europe
 
-```{r}
+```{'''{r}
 #|: Austria
 # FTX
 
@@ -204,7 +204,7 @@ file = "austria.csv"
 austria <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Belgium
 # BEL 20
 
@@ -213,7 +213,7 @@ file = "belgium.csv"
 belgium <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Bulgaria
 # SOFIX ETF
 
@@ -222,7 +222,7 @@ file = "bulgaria.csv"
 bulgaria <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Croatia
 # CROBEX ETF
 
@@ -231,7 +231,7 @@ file = "croatia.csv"
 croatia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Denmark
 # OMXC25
 
@@ -240,7 +240,7 @@ file = "denmark.csv"
 denmark <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: England
 # LSE
 
@@ -249,7 +249,7 @@ file = "england.csv"
 england <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Finland
 # OMXH25
 
@@ -258,7 +258,7 @@ file = "finland.csv"
 finland <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: France
 # CAC 40
 
@@ -268,7 +268,7 @@ file = "france.csv"
 france <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Germany
 # DAX
 
@@ -277,7 +277,7 @@ file = "germany.csv"
 germany <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Greece
 # Composite Index
 
@@ -286,7 +286,7 @@ file = "greece.csv"
 greece <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Ireland
 # ISEQ
 
@@ -295,7 +295,7 @@ file = "ireland.csv"
 ireland <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Lithuania
 # OMX Vilnius GI
 
@@ -304,7 +304,7 @@ file = "lithuania.csv"
 lithuania <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Netherlands
 # AEX Index
 
@@ -313,7 +313,7 @@ file = "netherlands.csv"
 netherlands <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Norway
 # OBX
 
@@ -322,7 +322,7 @@ file = "norway.csv"
 norway <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Portugal
 # PSI
 
@@ -331,7 +331,7 @@ file = "portugal.csv"
 portugal <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Russia
 # MOEX
 
@@ -340,7 +340,7 @@ file = "russia.csv"
 russia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Serbia
 # BELEX 15 ETF
 
@@ -349,7 +349,7 @@ file = "serbia.csv"
 serbia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Slovakia
 # SAX ETF
 
@@ -358,7 +358,7 @@ file = "slovakia.csv"
 slovakia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Spain
 # IBEX 35
 
@@ -367,7 +367,7 @@ file = "spain.csv"
 spain <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Sweden
 # OMX Stockholm 30
 
@@ -376,7 +376,7 @@ file = "sweden.csv"
 sweden <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Switzerland
 # SSMI
 
@@ -387,7 +387,7 @@ switzerland <- scrape_yahoo(url, file)
 
 ## Oceania
 
-```{r}
+```{'''{r}
 #|: Australia
 # S&P/ASX 300
 
@@ -396,7 +396,7 @@ file = "australia.csv"
 australia <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: New-Zealand
 # NZX 50
 
@@ -407,7 +407,7 @@ new_zealand <- scrape_yahoo(url, file)
 
 ## Americas
 
-```{r}
+```{'''{r}
 #|: Argentina
 # MERVAL
 
@@ -416,7 +416,7 @@ file = "argentina.csv"
 argentina <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Brazil 
 # IBOVESPA
 
@@ -425,7 +425,7 @@ file = "brazil.csv"
 brazil <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Canada
 # S&P/TSX Composite
 
@@ -434,7 +434,7 @@ file = "canada.csv"
 canada <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: Mexico
 # IPC Mexico
 
@@ -443,7 +443,7 @@ file = "mexico.csv"
 mexico <- scrape_yahoo(url, file)
 ```
 
-```{r}
+```{'''{r}
 #|: United States
 # S&P 500
 
@@ -454,7 +454,7 @@ usa <- scrape_yahoo(url, file)
 
 ## Other
 
-```{r}
+```{'''{r}
 #|: example-of-old-way-of-webscraping
 # France's CAC 40
 
@@ -464,7 +464,7 @@ usa <- scrape_yahoo(url, file)
 # view(france)
 ```
 
-```{r}
+```{'''{r}
 #|: testing-investing.com
 
 # url <- "https://www.investing.com/indices/dhaka-stock-exchange-30-historical-data"
