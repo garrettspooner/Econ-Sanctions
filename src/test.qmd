@@ -16,7 +16,7 @@ editor: visual
 library(tidyverse) 
 library(tidymodels)
 library(dplyr)
-#library(tidyquant)
+library(tidyquant)
 library(alphavantager)
 library(zoo)
 library(data.table)
@@ -176,4 +176,3 @@ plot(medians, type = "b")
 sums <- rollsum(RUBUSD_X_2014_2024_$Open, 64)
 plot(sums, type = "b")
 ```
-
