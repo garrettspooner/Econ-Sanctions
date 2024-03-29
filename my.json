@@ -1,0 +1,4168 @@
+[
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "F97",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "908231.372628"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1296154.132018"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IQ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "81072.860369"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "125396.360545"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "RO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "87375.213689"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "96683.418218"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "X88",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1356.992744"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1517.324748"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "584703.018831"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "620147.184296"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "189230.877537"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "197597.896388"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "14747.546463"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "15183.244716"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ZW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6036.187305"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "6585.479341"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ME",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "505.815008"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "742.312937"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5194.857139"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5709.543957"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BJ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1025.778424"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "849.932257"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "XS25",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5098057.769335"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5602597.985844"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_903",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1486269.952777"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1635983.944349"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "29268.510351"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "34734.783069"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1251.956007"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1232.378609"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5122.509755"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7898.168372"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "35116.222724"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "51443.395619"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "7905.035982"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "9586.647234"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "93878.024713"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "97489.095973"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MV",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "151.28117"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "159.010757"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "22208.0043"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "38146.4342"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6054.132505"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7402.719309"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "39986.9711"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "33919.32916"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5220.890584"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7431.860263"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3368216.972663"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3604481.49075"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3142.979849"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4332.145453"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NP",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1724.282081"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1382.44128"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "11140.86378"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "16236.983261"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "57327.001413"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "65431.061315"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3681.100753"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4310.142456"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "8244.915917"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "8729.356237"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3293.887573"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3344.361563"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "R1",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "8614.079101"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "9678.192327"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "28.26046"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "36.304992"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "10985.584941"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "13603.746248"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "149.559997"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "190.85151"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GB",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "459609.361784"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "529129.755617"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "OM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1999.401236"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "8752.530795"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "715.819565"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "543.087651"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1042.736971"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "919.388362"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4256.755108"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "11113.142761"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "770.461101"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2324.878109"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "615546.775621"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "658456.586865"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "RW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1196.853585"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1562.504485"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "HR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "21876.645698"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "25465.708266"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "UA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "65826.467477"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "44443.200593"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_440",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1035710.213531"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1461064.263388"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "47192.441558"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "57523.214936"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CSH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "VE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2683.177271"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3940.184868"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "202799.937024"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "211920.100617"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "17149.312117"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "18603.110371"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_092",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "7697897.486529"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "8488336.333658"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "YE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "81.378015"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "97.345831"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4243.84039"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4601.810487"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "225214.458038"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "254169.747663"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "EE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "21398.25809"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "22380.480761"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "413.341003"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "490.566692"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ZA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "122354.020925"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "123387.26869"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "457406.963375"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "516016.208516"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "74619.469933"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "80742.656602"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "13635.511752"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "15683.554938"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "59817.570568"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "82954.643386"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "HN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5201.138542"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "6109.499655"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SUH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "F6",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "401742.997208"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "455615.71424"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2305.095622"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3388.96412"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "281645.257207"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "334463.079195"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "206.95635"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "250.783334"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ML",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4666.448651"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4542.015316"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "41153.626063"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "49915.072364"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "QA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "87165.659554"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "130920.851816"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "EC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "26699.155442"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "32626.881665"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "16794.207402"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "17293.488034"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_080",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1627554.565772"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2219112.105397"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "172992.465489"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "277041.256599"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "VU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "45.633"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "50.746095"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "F1",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "571441.803027"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "675650.938058"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BB",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "275.527643"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "320.067196"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "19471.53617"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "22606.585803"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1636499.583636"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1675542.637284"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "XR43",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "9325452.052301"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "10707448.439055"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "27678.875989"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "28043.220248"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "838490.70764"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "962446.383027"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FJ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "892.35386"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1049.353865"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "383.898692"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "533.148001"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "12450.830596"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "13504.327168"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "15157.860195"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "20549.849248"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "8377.046966"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "13286.111383"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BF",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5040.406639"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4542.731249"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3015.987201"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5360.069395"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "17783.348522"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "24303.078995"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DJ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "405.530153"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "492.099657"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "13319.505388"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "16852.859898"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1501.931237"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1832.38684"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KP",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "189.189717"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "242.892082"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "77629.062185"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "88057.187518"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ET",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4006.086648"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4970.889725"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "WS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "29.079771"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "41.580145"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "548761.473283"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "637074.082386"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MX",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "494945.383"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "577729.987"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "266291.81122"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "283862.758108"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "265400.379239"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "371834.947533"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "81975.805377"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "86021.280086"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "JM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1439.627959"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1062.411823"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CV",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "73.996038"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "58.900735"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "190618.745215"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "214115.196468"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "41389.989091"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "57105.700449"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "16676.584813"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "18561.194823"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1534.564659"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2104.032626"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "394463.71039"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "453196.569073"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2385.244195"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3699.635835"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "10559.535045"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "9957.013974"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "28681.421753"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "30872.794285"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "609.633697"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "724.915888"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_473",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1167.803027"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1274.432666"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "36.335997"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "48.822391"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2707.433581"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3546.314854"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "9376.914778"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "13427.020887"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "36530.850612"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "41999.045131"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "HU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "141825.413586"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "151668.982722"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DE2",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "VC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "53.032378"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "71.45985"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "51.572564"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "66.214646"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "501740.476073"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "596957.71223"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1658.948421"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2186.695032"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4421.384184"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "6043.313217"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "9241.377403"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "12525.983914"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1079.792672"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2086.948426"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "264.005693"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "286.430398"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "39574.133382"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "46319.748469"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "UG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3972.854985"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3587.602694"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "11012.507376"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "18453.030611"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "56228.586894"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "60151.83873"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ST",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "20.752001"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "20.878375"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3513.117968"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3878.440278"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "340530.213607"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "360395.232176"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "344138.637936"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "412540.265911"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "YUC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "278924.567991"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "407429.581914"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "125927.151823"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "131769.79287"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "W00",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "22059281.139791"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "24666675.250696"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "VN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "330431.996952"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "364262.418391"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3054.320816"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3249.570723"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ID",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "231522.458149"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "290953.709514"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "16.726186"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "18.205397"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "IL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "59075"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "72538.3"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "HT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1273.126839"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1203.300731"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "87.492818"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "103.841099"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "57336.261095"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "69685.26571"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "B0",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6643895.604176"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7172417.348207"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2454.970142"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4476.912878"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "38434.843397"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "65102.212578"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GQ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4693.983597"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7644.43081"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "JP",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "756166.163384"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "746720.431187"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ZM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "11141.094532"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "11646.598892"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SV",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6394.888919"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7115.101783"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AF",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "766.728288"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "616.311212"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "40701.698922"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "46480.786359"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6391.18927"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "9487.638542"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1649.982743"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1646.52596"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "75208.893838"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "82435.065059"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LV",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "20832.155049"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "24080.689848"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6200.382643"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "6093.02122"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1747.068121"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2307.578355"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4242.512939"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5583.425389"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "RU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "492048.058908"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "584457.238141"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "R14",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "716879.140001"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "831816.444852"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "DM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "29.133632"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "24.725178"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "17395.60785"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "19569.558039"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "XR29",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "12732472.094746"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "13957709.486893"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "954.303247"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "999.067324"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3900.14909"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4347.009704"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SB",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "363.951205"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "390.558547"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "299037.704561"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "352337.923095"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ES",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "379751.282574"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "415379.620929"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "644399.39"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "683583.612"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "379401.552403"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "401751.970003"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "30971.450976"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "38215.390721"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "US",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1757821.567908"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2065156.971432"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "103882.647643"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "108370.863626"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_459",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "UY",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "9537.248057"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "11187.26135"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "RS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "25559.357547"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "29056.978941"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1172.783371"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1198.158501"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "A10",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1187796.456783"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1387521.999729"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LC",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "105.44034"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "79.983627"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "68303.554694"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "100240.734906"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "1C_198",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y"
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "UZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "14081.079835"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "15349.649063"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "E1",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1486269.952777"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1635983.944349"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LB",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "4575.93208"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4308.951"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KE",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "6728.860365"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "7309.482311"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BD",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "37848.891219"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "47085.866948"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CF",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "54.402558"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "56.004641"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "3686.245683"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "3910.111996"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "226528.099469"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "241971.738485"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TJ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1473.644625"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1656.594153"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "JO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "8505.383388"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "11382.81238"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TO",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "14.381"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5.025995"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KN",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "44.464206"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "28.920386"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "HK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "671992.604167"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "611365.563695"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "EG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "40696.663981"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "48398.807224"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "7114.201078"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "8137.012298"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "VA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "11.712794"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5.621329"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "KI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "36.510565"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "189.680929"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NA",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5481.692316"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4896.22307"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AG",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1848.580572"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "2286.607907"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "NR",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "228.918377"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "246.901137"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "141.172822"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "410.722277"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "BT",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "854.41929"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "765.91717"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "232.272963"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "238.166702"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "GU",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "164.809146"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "196.758371"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "CW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "209.392831"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "191.811712"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AI",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "35.406426"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "36.802262"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "525.277606"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "489.737231"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PF",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "150.441745"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "132.159474"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MH",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1363.337887"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1346.348138"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "LS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1066.980451"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1052.899125"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1357.640076"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1667.8175"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "AS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "27.43908"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "25.849217"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TV",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "26.251682"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "22.695097"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SM",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "215.164584"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "205.898159"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "ER",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "489.57986"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "580.683869"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "XK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "885.544653"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "967.840058"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "MS",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "12.800882"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5.212912"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "PW",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1.853219"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "4.50182"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SX",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "61.516788"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "102.156452"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "SZ",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "2063.256998"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1949.657991"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "TL",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "321.783792"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "307.3803"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "FK",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "317.827598"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "382.004232"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "U2",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "5491325.008402"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "5942415.214984"
+   }
+  ]
+ },
+ {
+  "@FREQ": "A",
+  "@REF_AREA": "XS5",
+  "@INDICATOR": "TXG_FOB_USD",
+  "@COUNTERPART_AREA": "W00",
+  "@UNIT_MULT": "6",
+  "@TIME_FORMAT": "P1Y",
+  "Obs": [
+   {
+    "@TIME_PERIOD": "2021",
+    "@OBS_VALUE": "1151584.876198"
+   },
+   {
+    "@TIME_PERIOD": "2022",
+    "@OBS_VALUE": "1625728.794893"
+   }
+  ]
+ }
+]
