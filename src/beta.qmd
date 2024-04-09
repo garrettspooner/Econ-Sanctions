@@ -416,9 +416,10 @@ beta_filter <- function(df, reporters, partners, year, keyword) {
 ```{r}
 #|: the-function-that-puts-everything-together
 
-everything <- function(year) {
+beta <- function(year, key) {
   freq <- "B"
   exp <- import("export_ease")
+  exp$comtrade$Comtrade$set_key(key)
   exp$comtrade$Comtrade$get_all_exports(freq = freq, year = year)
   exp$comtrade$Comtrade$get_total_exports(freq = freq, year = year)
   exp$imf$IMF$get_total_exports(freq = freq, year = year)
@@ -484,7 +485,8 @@ delete <- function(years) {
 # so must filter the df first before viewing/writing
 
 year <- "2021" # year for which you want to gather data
-final <- everything(year)
+key <- "9be8b0a6438a4940bd592c691bb2c4ca" # Comtrade API subscription key (req'd for accessing API)
+final <- beta(year,key)
 ```
 
 ```{r}
@@ -497,6 +499,7 @@ partners <- c("Russia")
 reporters <- c("Austria")
 
 filtered_final <- beta_filter(final, reporters, partners, year, paste0(reporters, year))
+view(filtered_final)
 ```
 
 ### Comtrade

@@ -249,7 +249,8 @@ sanctions <- "new_sanction_list.xlsx"
 ```{r message = FALSE warning = FALSE}
 #|: running khi function
 
-khi(provide_beta, betas, sanctions, alphas, image_name, reporter, partner, U)
+dt <- khi(provide_beta, betas, sanctions, alphas, image_name, reporter, partner, U)
+view(dt)
 
 # sanction.list <- load_sanction(sanctions)
 # beta <- load_beta(reporter, partner, provide_beta, betas, sanction.list)

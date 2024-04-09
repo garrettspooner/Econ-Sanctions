@@ -59,7 +59,7 @@ library(anytime)
 
 ## Virtual Environment
 
-```{r message = FALSE} <-}
+```{r message = FALSE}
 #|: creating-virtual-env-and-installing-python-pkgs
 # to update chromedriver: brew upgrade chromedriver (ignore)
 
