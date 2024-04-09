@@ -144,6 +144,7 @@ ruble11_14$Year<-format(ruble11_14$Date,format="%y")
 ruble11_14 <- ruble11_14 |>
   mutate(Qtr = as.yearqtr(as.Date(Date)))|>
   mutate(Open = as.numeric(Open))|>
+  mutate(Open = 1/Open)|>
   drop_na()
 
 tapply(ruble11_14$Open, ruble11_14$Qtr, mean)
