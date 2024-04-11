@@ -20,11 +20,11 @@ clean_comtrade <- function(file) {
   df <- read_csv(csv) |> select(freqCode, refPeriodId, refYear, refMonth, reporterCode, reporterISO, reporterDesc, flowDesc, partnerCode, partnerISO, partnerDesc, cmdDesc, primaryValue)
   df <- df |> drop_na(primaryValue)
   df$date <- ymd(df$refPeriodId)
-  df$date <- as.Date(df$date)
+  df$date <- anydate(df$date)
   df <- df |> 
     mutate(value = primaryValue, reporter = reporterDesc, partner = partnerDesc) |> 
     select(date, value, reporter, partner)
-  df$date <- as.Date(df$date)
+  df$date <- anydate(df$date)
   write_csv(df, csv)
   write_xlsx(df, excel)
   return(df)
@@ -48,7 +48,7 @@ add_countries <- function(clean) {
   combo$partner_code <- combo$COUNTERPART_AREA
   combo <- subset(combo, select = -c(Names, COUNTERPART_AREA))
   combo <- combo |> select(date, value, reporter, partner)
-  combo$date <- as.Date(combo$date)
+  combo$date <- anydate(combo$date)
   return(combo)
 }
 ```
@@ -104,11 +104,11 @@ clean_imf <- function(file) {
     clean$month <- month(ym(clean$date))
     clean$year <- year(ym(clean$date))
     clean$date <- ym(clean$date)
-    clean$date <- as.Date(clean$date)
+    clean$date <- anydate(clean$date)
   } else {
     clean$year <- clean$date
     clean$date <- ymd(clean$year, truncated = 2L)
-    clean$date <- as.Date(clean$date)
+    clean$date <- anydate(clean$date)
   }
   clean <- subset(clean, select = -c(category, INDICATOR))
   total <- add_countries(clean)
@@ -135,7 +135,7 @@ get_wb <- function(years, df_to_return) {
   both <- both |> filter(!is.na(iso2c))
   both$year <- both$date
   both$date <- ymd(both$year, truncated = 2L)
-  both$date <- as.Date(both$date)
+  both$date <- anydate(both$date)
   both <- both |> relocate(iso2c, iso3c, country, year, date, gdp, total_exports)
   gdp <- both[, -7] |> 
     drop_na(gdp) |> 
@@ -270,7 +270,7 @@ get_months <- function(year) {
     paste(year, "11-01", sep = "-"),
     paste(year, "12-01", sep = "-")
   )
-  date <- as.Date(date)
+  date <- anydate(date)
   return(date)
 }
 ```
@@ -287,7 +287,7 @@ add_annual <- function(pairs_monthly, pairs_annual) {
   diff_df <- pairs_annual |> filter(reporter %in% diff)
   diff_df <- diff_df |> mutate(partner_exports = partner_exports / 12)
   diff_dupe <- diff_df[rep(1:nrow(diff_df), each = 12), ]
-  year <- year(as.Date(pairs_annual$date[1]))
+  year <- year(anydate(pairs_annual$date[1]))
   date <- get_months(year)
   date <- rep(date, len = length(diff_dupe$date))
   diff_dupe$date <- date
@@ -344,7 +344,7 @@ merge <- function(pairs_monthly, pairs_annual, total_monthly, gdp) {
 
 beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
   df <- merge(pairs_monthly, pairs_annual, total_monthly, gdp)
-  year <- year(as.Date(df$date[1]))
+  year <- year(anydate(df$date[1]))
   months <- get_months(year)
   total <- data.frame(
     date = as.Date(character(), format = "%Y-%m-%d"),
@@ -356,7 +356,7 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
     stringsAsFactors = FALSE
   )
   for (day in months) { 
-    day <- as.Date(day)
+    day <- anydate(day)
     num_days <- monthDays(day)
     df_month <- df |> filter(date == day) |> 
       mutate(
@@ -368,7 +368,7 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
     first_day <- floor_date(day, 'month')
     last_day <- ceiling_date(day, 'month') - days(1)
     date <- c(seq(ymd(first_day), ymd(last_day), "days"))
-    date <- as.Date(date)
+    date <- anydate(date)
     date <- rep(date, len = length(df_dupe$date))
     df_dupe$date <- date
     total <- rbind(total, df_dupe)
@@ -390,13 +390,13 @@ beta_filter <- function(df, reporters, partners, year, keyword) {
   if (!is.null(partners)) {df <- df |> filter(partner %in% partners) }
   # df <- df |> select(date, beta)
   if (length(pull(df, date)) < 364) {
-    first_day <- as.Date(ymd(year, truncated = 2L))
+    first_day <- anydate(ymd(year, truncated = 2L))
     last_day <- ceiling_date(first_day, 'year') - 1
-    date <- c(seq(ymd(as.Date(first_day)), ymd(as.Date(last_day)), "days"))
+    date <- c(seq(ymd(anydate(first_day)), ymd(anydate(last_day)), "days"))
     date <- as.data.frame(date)
     df <- left_join(date, df)
     missing <- df |> filter(is.na(beta))
-    missing <- as.Date(pull(missing, date))
+    missing <- anydate(pull(missing, date))
     print(paste0("Missing data from ", min(missing), " to ", max(missing), " have been estimated using linear interpolation."))
     df <- df |>
       dplyr::mutate(beta = coalesce(beta, predict(lm(beta ~ date), across(date)))) |> 
@@ -587,4 +587,5 @@ delete(years)
 # “when pre sanction trade between sender and target is small (i.e. less than one percent of the target’s GDP) then the failure rate is 80% while at a substantial level of pre sanction trade (more than 10% of the target’s GDP) the chance that a sanction succeeds becomes slightly better than fifty-fifty.”
 
 # Source: Bergeijk, P.A.G. van (2010), Economic Diplomacy and the Geography of International Trade, Edward Elgar: Cheltenham.
+
 ```
