@@ -347,7 +347,7 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
   year <- year(anydate(df$date[1]))
   months <- get_months(year)
   total <- data.frame(
-    date = as.Date(character(), format = "%Y-%m-%d"),
+    date = base::as.Date(character(), format = "%y-%m-%d"),
     reporter = character(),
     total_exports = numeric(),
     gdp = numeric(),
@@ -367,10 +367,10 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
     df_dupe <- df_month[rep(1:nrow(df_month), each = num_days), ]
     first_day <- floor_date(day, 'month')
     last_day <- ceiling_date(day, 'month') - days(1)
-    date <- c(seq(ymd(first_day), ymd(last_day), "days"))
-    date <- anydate(date)
-    date <- rep(date, len = length(df_dupe$date))
-    df_dupe$date <- date
+    dates <- c(seq(ymd(first_day), ymd(last_day), "days"))
+    dates <- anydate(dates)
+    dates <- rep(dates, len = length(df_dupe$date))
+    df_dupe$date <- dates
     total <- rbind(total, df_dupe)
   }
   total <- total |> mutate(beta = (partner_exports / total_exports) * (total_exports / gdp))
@@ -587,5 +587,5 @@ delete(years)
 # “when pre sanction trade between sender and target is small (i.e. less than one percent of the target’s GDP) then the failure rate is 80% while at a substantial level of pre sanction trade (more than 10% of the target’s GDP) the chance that a sanction succeeds becomes slightly better than fifty-fifty.”
 
 # Source: Bergeijk, P.A.G. van (2010), Economic Diplomacy and the Geography of International Trade, Edward Elgar: Cheltenham.
-
+conflicts(detail = TRUE)
 ```
