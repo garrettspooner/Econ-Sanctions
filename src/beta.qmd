@@ -357,7 +357,7 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
   )
   for (day in months) { 
     day <- anydate(day)
-    num_days <- monthDays(day)
+    num_days <- min(c(max(c(monthDays(day), 0)), 31))
     df_month <- df |> filter(date == day) |> 
       mutate(
         total_exports = total_exports / num_days,
