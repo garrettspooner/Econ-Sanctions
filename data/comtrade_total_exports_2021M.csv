@@ -108,7 +108,7 @@ date,value,reporter,partner
 2021-01-01,15003935219,Türkiye,World
 2021-01-01,3927453219.93,Ukraine,World
 2021-01-01,641517226.76,North Macedonia,World
-2021-01-01,2536387816.336,Egypt,World
+2021-01-01,2965813121.872,Egypt,World
 2021-01-01,27392471984.041,United Kingdom,World
 2021-01-01,416072971.429,United Rep. of Tanzania,World
 2021-01-01,127476378280,USA,World
@@ -226,7 +226,7 @@ date,value,reporter,partner
 2021-02-01,15952528858,Türkiye,World
 2021-02-01,4548093006.23,Ukraine,World
 2021-02-01,659586522.22,North Macedonia,World
-2021-02-01,2717261987.91,Egypt,World
+2021-02-01,2921212300.724,Egypt,World
 2021-02-01,36569812667.005,United Kingdom,World
 2021-02-01,356239053.256,United Rep. of Tanzania,World
 2021-02-01,123874920638,USA,World
@@ -344,7 +344,7 @@ date,value,reporter,partner
 2021-03-01,18955706115,Türkiye,World
 2021-03-01,5231255170.32,Ukraine,World
 2021-03-01,701427708.93,North Macedonia,World
-2021-03-01,3430289300.038,Egypt,World
+2021-03-01,3805193396.882,Egypt,World
 2021-03-01,48457910709.369,United Kingdom,World
 2021-03-01,546564478.23,United Rep. of Tanzania,World
 2021-03-01,151488961267,USA,World
@@ -461,7 +461,7 @@ date,value,reporter,partner
 2021-04-01,18756865083,Türkiye,World
 2021-04-01,5362334374.44,Ukraine,World
 2021-04-01,736830045.36,North Macedonia,World
-2021-04-01,2915646561.545,Egypt,World
+2021-04-01,3199733948.669,Egypt,World
 2021-04-01,37888521380.355,United Kingdom,World
 2021-04-01,425373663.27,United Rep. of Tanzania,World
 2021-04-01,144342213766,USA,World
@@ -578,7 +578,7 @@ date,value,reporter,partner
 2021-05-01,16468343399,Türkiye,World
 2021-05-01,5547501968.23,Ukraine,World
 2021-05-01,664399530.028,North Macedonia,World
-2021-05-01,3137973188.198,Egypt,World
+2021-05-01,3393551859.085,Egypt,World
 2021-05-01,38334171411.729,United Kingdom,World
 2021-05-01,483810507.296,United Rep. of Tanzania,World
 2021-05-01,144663069020,USA,World
@@ -695,7 +695,7 @@ date,value,reporter,partner
 2021-06-01,19740427009,Türkiye,World
 2021-06-01,5318391963.43,Ukraine,World
 2021-06-01,703983966.66,North Macedonia,World
-2021-06-01,3644161461.983,Egypt,World
+2021-06-01,3876518214.218,Egypt,World
 2021-06-01,38301735770.05,United Kingdom,World
 2021-06-01,536447452.61,United Rep. of Tanzania,World
 2021-06-01,147636975885,USA,World
@@ -812,7 +812,7 @@ date,value,reporter,partner
 2021-07-01,16357698212,Türkiye,World
 2021-07-01,5603335223.87,Ukraine,World
 2021-07-01,694043940.71,North Macedonia,World
-2021-07-01,2958716131.923,Egypt,World
+2021-07-01,3157199563.08,Egypt,World
 2021-07-01,37353216188.667,United Kingdom,World
 2021-07-01,594083987.01,United Rep. of Tanzania,World
 2021-07-01,144029705365,USA,World
@@ -929,7 +929,7 @@ date,value,reporter,partner
 2021-08-01,18860976378,Türkiye,World
 2021-08-01,6274584248.43,Ukraine,World
 2021-08-01,666136200.2,North Macedonia,World
-2021-08-01,3279103225.71,Egypt,World
+2021-08-01,3577164738.589,Egypt,World
 2021-08-01,33298994944.492,United Kingdom,World
 2021-08-01,625980675.971,United Rep. of Tanzania,World
 2021-08-01,148034903934,USA,World
@@ -1046,7 +1046,7 @@ date,value,reporter,partner
 2021-09-01,20715563079,Türkiye,World
 2021-09-01,4175180554.75,Ukraine,World
 2021-09-01,665327221.07,North Macedonia,World
-2021-09-01,3469309587.383,Egypt,World
+2021-09-01,3683539147.36,Egypt,World
 2021-09-01,39638921591.252,United Kingdom,World
 2021-09-01,621107907.02,United Rep. of Tanzania,World
 2021-09-01,141790419234,USA,World
@@ -1163,7 +1163,7 @@ date,value,reporter,partner
 2021-10-01,20713984277,Türkiye,World
 2021-10-01,6261605572.25,Ukraine,World
 2021-10-01,683170382.45,North Macedonia,World
-2021-10-01,3776281916.454,Egypt,World
+2021-10-01,4157701042.656,Egypt,World
 2021-10-01,46604139299.117,United Kingdom,World
 2021-10-01,590866972.02,United Rep. of Tanzania,World
 2021-10-01,164371444683,USA,World
@@ -1280,7 +1280,7 @@ date,value,reporter,partner
 2021-11-01,21455111986,Türkiye,World
 2021-11-01,6795320768.34,Ukraine,World
 2021-11-01,699878488.87,North Macedonia,World
-2021-11-01,4495170553.346,Egypt,World
+2021-11-01,4605525576.116,Egypt,World
 2021-11-01,40615413468.359,United Kingdom,World
 2021-11-01,594564898.022,United Rep. of Tanzania,World
 2021-11-01,156347608488,USA,World
@@ -1397,7 +1397,7 @@ date,value,reporter,partner
 2021-12-01,22233318423,Türkiye,World
 2021-12-01,6825219440.17,Ukraine,World
 2021-12-01,670013404.37,North Macedonia,World
-2021-12-01,4336362238.886,Egypt,World
+2021-12-01,4293699080.01,Egypt,World
 2021-12-01,45863436973.502,United Kingdom,World
 2021-12-01,599750320.61,United Rep. of Tanzania,World
 2021-12-01,159080107546,USA,World

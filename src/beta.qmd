@@ -284,7 +284,8 @@ add_annual <- function(pairs_monthly, pairs_annual) {
   monthly <- pairs_monthly |> distinct(reporter)
   annual <- pairs_annual |> distinct(reporter)
   diff <- setdiff(annual$reporter, monthly$reporter)
-  diff_df <- pairs_annual |> filter(reporter %in% diff)
+  df <- data.frame(reporter = diff)
+  diff_df <- base::merge(pairs_annual, df, by = "reporter")
   diff_df <- diff_df |> mutate(partner_exports = partner_exports / 12)
   diff_dupe <- diff_df[rep(1:nrow(diff_df), each = 12), ]
   year <- year(anydate(pairs_annual$date[1]))
@@ -308,27 +309,36 @@ merge <- function(pairs_monthly, pairs_annual, total_monthly, gdp) {
   pairs <- pairs_monthly |>
     mutate(partner_exports = value) |>
     select(date, partner_exports, reporter, partner)
-  pairs_annual <- pairs_annual |>
+  pairs_a <- pairs_annual |>
     mutate(partner_exports = value) |>
     select(date, partner_exports, reporter, partner)
   total <- total_monthly |>
     mutate(total_exports = value) |>
     select(date, total_exports, reporter)
-  gdp <- gdp
   p_dates <- pairs |> distinct(date)
   t_dates <- total |> distinct(date)
   g_dates <- gdp |> distinct(date)
   exp_only_dates <- intersect(p_dates$date, t_dates$date)
   gdp_only_dates <- intersect(exp_only_dates, g_dates$date)
-  pairs <- pairs |> filter(date %in% exp_only_dates)
-  pairs_annual <- pairs_annual |> filter(date %in% exp_only_dates)
-  total <- total |> filter(date %in% exp_only_dates)
-  gdp <- gdp |> filter(date %in% gdp_only_dates)
+  exp_only_dates_df <- data.frame(date = as.Date(exp_only_dates))
+  gdp_only_dates_df <- data.frame(date = as.Date(gdp_only_dates))
+  pairs <- 
+    base::merge(pairs, exp_only_dates_df, 
+      by = intersect(names(pairs), names(exp_only_dates_df)))
+  pairs_a <- 
+    base::merge(pairs_a, exp_only_dates_df, 
+      by = intersect(names(pairs_a), names(exp_only_dates_df)))
+  total <-
+    base::merge(total, exp_only_dates_df, 
+      by = intersect(names(total), names(exp_only_dates_df)))
+  gdp <- 
+    base::merge(gdp, gdp_only_dates_df, 
+      by = intersect(names(gdp), names(gdp_only_dates_df)))
   pairs <- adjust_names(pairs, TRUE)
-  pairs_annual <- adjust_names(pairs_annual, TRUE)
+  pairs_a <- adjust_names(pairs_a, TRUE)
   total <- adjust_names(total, FALSE)
   gdp <- adjust_names(gdp, FALSE)
-  pairs <- add_annual(pairs, pairs_annual)
+  pairs <- add_annual(pairs, pairs_a)
   all_exports <- na.omit(left_join(pairs, total, by = c("reporter", "date")))
   gdp <- gdp |> mutate(gdp = gdp / 12) |> select(reporter, gdp)
   all_exports <- na.omit(left_join(all_exports, gdp, by = "reporter")) |>
@@ -357,7 +367,7 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
   )
   for (day in months) { 
     day <- anydate(day)
-    num_days <- min(c(max(c(monthDays(day), 0)), 31))
+    num_days <- min(c(max(c(monthDays(day), 1)), 31))
     df_month <- df |> filter(date == day) |> 
       mutate(
         total_exports = total_exports / num_days,
@@ -387,8 +397,10 @@ beta_calc <- function(pairs_monthly,pairs_annual, total_monthly, gdp) {
 
 beta_filter <- function(df, reporters, partners, year, keyword) {
   df <- as.data.frame(df)
-  if (!is.null(reporters)) { df <- df |> filter(reporter %in% reporters) }
-  if (!is.null(partners)) {df <- df |> filter(partner %in% partners) }
+  reporters_df <- data.frame(reporter = reporters)
+  partners_df <- data.frame(partner = partners)
+  if (!is.null(reporters)) { df <- base::merge(df, reporters_df, by = "reporter") }
+  if (!is.null(partners)) { df <- base::merge(df, partners_df, by = "partner") }
   # df <- df |> select(date, beta)
   if (length(pull(df, date)) < 364) {
     first_day <- anydate(ymd(year, truncated = 2L))
