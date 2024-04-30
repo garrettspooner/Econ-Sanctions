@@ -285,7 +285,7 @@ add_annual <- function(pairs_monthly, pairs_annual) {
   annual <- pairs_annual |> distinct(reporter)
   diff <- setdiff(annual$reporter, monthly$reporter)
   df <- data.frame(reporter = diff)
-  diff_df <- base::merge(pairs_annual, df, by = "reporter")
+  diff_df <- base::merge(pairs_annual, df, by = intersect(names(pairs_annual), names(df)))
   diff_df <- diff_df |> mutate(partner_exports = partner_exports / 12)
   diff_dupe <- diff_df[rep(1:nrow(diff_df), each = 12), ]
   year <- year(anydate(pairs_annual$date[1]))
@@ -399,8 +399,12 @@ beta_filter <- function(df, reporters, partners, year, keyword) {
   df <- as.data.frame(df)
   reporters_df <- data.frame(reporter = reporters)
   partners_df <- data.frame(partner = partners)
-  if (!is.null(reporters)) { df <- base::merge(df, reporters_df, by = "reporter") }
-  if (!is.null(partners)) { df <- base::merge(df, partners_df, by = "partner") }
+  if (!is.null(reporters)) { df <- base::merge(df, reporters_df,
+                                               by = intersect(names(df), names(reporters_df))) }
+  if (!is.null(partners)) { df <- base::merge(df, partners_df,
+                                              by = intersect(names(df), names(partners_df))) }
+  # if (!is.null(reporters)) { df <- df |> filter(reporter %in% reporters) }
+  # if (!is.null(partners)) { df <- df |> filter(partner %in% partners) }
   # df <- df |> select(date, beta)
   if (length(pull(df, date)) < 364) {
     first_day <- anydate(ymd(year, truncated = 2L))
