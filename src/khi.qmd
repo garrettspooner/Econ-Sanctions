@@ -64,7 +64,9 @@ update_sanction <- function(sanction.list, beta, alphas) {
   last <- as.Date(max(beta$Date))
   dates <- c(seq(ymd(first), ymd(last), "days"))
   dates <- as.Date(dates)
-  sanction.list <- sanction.list |> filter(Date %in% dates)
+  dates_df <- data.frame(Date = dates)
+  sanction.list <- base::merge(sanction.list, dates_df,
+    by = intersect(names(sanction.list), names(dates_df))) |> select(ID, Date, Type, Multiplier)
   sanclist.ini <- sanction.list # save the initial list
   sanclist.ini <- as.data.frame(sanclist.ini)
   sanclist.ini <- na.omit(sanclist.ini)
@@ -252,13 +254,13 @@ sanctions <- "new_sanction_list.xlsx"
 dt <- khi(provide_beta, betas, sanctions, alphas, image_name, reporter, partner, U)
 view(dt)
 
-# sanction.list <- load_sanction(sanctions)
-# beta <- load_beta(reporter, partner, provide_beta, betas, sanction.list)
-# both <- update_sanction(sanction.list, beta, alphas)
-# sanction.list <- as.data.frame(both[1])
-# sanclist.ini <- as.data.frame(both[2])
-# dt_res <- create_time_series(beta, sanction.list, sanclist.ini, U)
-# plot(dt_res, image_name)
+sanction.list <- load_sanction(sanctions)
+beta <- load_beta(reporter, partner, provide_beta, betas, sanction.list)
+both <- update_sanction(sanction.list, beta, alphas)
+sanction.list <- as.data.frame(both[1])
+sanclist.ini <- as.data.frame(both[2])
+dt_res <- create_time_series(beta, sanction.list, sanclist.ini, U)
+plot(dt_res, image_name)
 ```
 
 ## Imports by Commodity
